@@ -1,17 +1,18 @@
 import { useCallback, useEffect, useState } from 'react'
 import bundledDiary from './data/diary.json'
-import { films, paths, sharedPath } from './catalog.js'
+import { films, paths, seenPath, sharedPath, today } from './catalog.js'
 import { fetchDiary, loadToken, saveEntry, storeToken } from './github.js'
 import PathRow from './components/PathRow.jsx'
 import Modal from './components/Modal.jsx'
 import FilmDetail from './components/FilmDetail.jsx'
 import LogForm from './components/LogForm.jsx'
 import ConnectForm from './components/ConnectForm.jsx'
+import MoveToSeen from './components/MoveToSeen.jsx'
 
 export default function App() {
   const [diary, setDiary] = useState(bundledDiary)
   const [token, setToken] = useState(loadToken)
-  // { kind: 'film' | 'log' | 'edit' | 'connect', filmId?, then? }
+  // { kind: 'film' | 'log' | 'edit' | 'seen' | 'unsee' | 'connect', filmId?, then? }
   const [modal, setModal] = useState(null)
 
   // The bundled copy can lag a minute behind the last commit while Pages
@@ -23,6 +24,9 @@ export default function App() {
   }, [token])
 
   const close = useCallback(() => setModal(null), [])
+  const open = (filmId) => setModal({ kind: 'film', filmId })
+  // Actions that save need a token; without one, connect first and carry on after.
+  const requireToken = (next) => setModal(token ? next : { kind: 'connect', then: next })
 
   async function save(filmId, entry, message) {
     const next = await saveEntry(token, filmId, entry, message)
@@ -41,9 +45,12 @@ export default function App() {
     close()
   }
 
+  const film = modal?.filmId && films.get(modal.filmId)
+
   return (
     <main className="page">
       <header className="top">
+        <div className="top-date">oct 28 / 2026</div>
         <div className="top-actions">
           {token ? (
             <button className="link-button" onClick={disconnect}>
@@ -67,28 +74,38 @@ export default function App() {
 
       <section className="paths">
         {paths.map((p) => (
-          <PathRow key={p.id} path={p} diary={diary} onOpen={(filmId) => setModal({ kind: 'film', filmId })} />
+          <PathRow
+            key={p.id}
+            path={p}
+            diary={diary}
+            onOpen={open}
+            onMarkSeen={(filmId) => requireToken({ kind: 'seen', filmId })}
+          />
         ))}
       </section>
 
       <hr className="separator" />
 
-      <PathRow path={sharedPath} diary={diary} onOpen={(filmId) => setModal({ kind: 'film', filmId })} />
+      <section className="paths">
+        <PathRow path={sharedPath} diary={diary} onOpen={open} />
+        <PathRow path={seenPath(diary)} diary={diary} onOpen={open} />
+      </section>
 
       {modal && (
         <Modal onClose={close}>
           {modal.kind === 'film' && (
             <FilmDetail
-              film={films.get(modal.filmId)}
+              film={film}
               entry={diary[modal.filmId]}
-              onEdit={() => setModal(token ? { kind: 'edit', filmId: modal.filmId } : { kind: 'connect', then: { kind: 'edit', filmId: modal.filmId } })}
+              onEdit={() => requireToken({ kind: 'edit', filmId: modal.filmId })}
+              onUnsee={() => requireToken({ kind: 'unsee', filmId: modal.filmId })}
               onClose={close}
             />
           )}
           {(modal.kind === 'log' || modal.kind === 'edit') && (
             <LogForm
               diary={diary}
-              editing={modal.kind === 'edit' ? films.get(modal.filmId) : null}
+              editing={modal.kind === 'edit' ? film : null}
               onSave={async (filmId, entry, message) => {
                 await save(filmId, entry, message)
                 setModal({ kind: 'film', filmId })
@@ -96,9 +113,20 @@ export default function App() {
               onClose={close}
             />
           )}
-          {modal.kind === 'connect' && (
-            <ConnectForm onConnect={connect} onClose={close} />
+          {(modal.kind === 'seen' || modal.kind === 'unsee') && (
+            <MoveToSeen
+              film={film}
+              back={modal.kind === 'unsee'}
+              onConfirm={async () => {
+                const label = `${film.title} (${film.year})`
+                if (modal.kind === 'seen') await save(film.id, { date: today(), seen: true }, `Seen before: ${label}`)
+                else await save(film.id, null, `Back to paths: ${label}`)
+                close()
+              }}
+              onClose={close}
+            />
           )}
+          {modal.kind === 'connect' && <ConnectForm onConnect={connect} onClose={close} />}
         </Modal>
       )}
     </main>

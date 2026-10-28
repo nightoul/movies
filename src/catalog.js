@@ -21,14 +21,29 @@ for (const p of paths) {
   }
 }
 
-// Always the last row: films that appear on more than one path, by year.
+const byYear = (a, b) => a.year - b.year || a.title.localeCompare(b.title)
+
+// Below the paths: films that appear on more than one path.
 export const sharedPath = {
   id: 'shared',
   name: 'Shared films',
   shared: true,
-  films: [...films.values()]
-    .filter((f) => f.paths.length > 1)
-    .sort((a, b) => a.year - b.year || a.title.localeCompare(b.title)),
+  films: [...films.values()].filter((f) => f.paths.length > 1).sort(byYear),
+}
+
+// The very last row: films seen before the diary. They're marked in the diary
+// with `seen: true` and drop out of every other row.
+export function seenPath(diary) {
+  return {
+    id: 'seen',
+    name: 'Seen',
+    seen: true,
+    films: [...films.values()].filter((f) => isSeen(diary, f.id)).sort(byYear),
+  }
+}
+
+export function isSeen(diary, filmId) {
+  return Boolean(diary[filmId]?.seen)
 }
 
 export function today() {

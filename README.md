@@ -12,9 +12,13 @@ Everything lives in `src/data/`:
 | --- | --- | --- |
 | `paths.json` | The paths, in the order they appear on the page, and their films (`title` + `year`) | You, by hand |
 | `colors.json` | The color palette: `used` colors (each tied to a path) and `available` ones waiting for a new path | `npm run new-path` |
-| `diary.json` | Your entries, keyed by film id: `date`, `place`, `note` | The site, by committing through the GitHub API |
+| `diary.json` | Your entries, keyed by film id: `date`, `place`, `note`, or `date` + `seen: true` for films seen before the diary | The site, by committing through the GitHub API |
 
 A film is identified by its title and year, so the same film in two paths (*Chinatown* in Jack Nicholson and '70s classics) shares one entry. Spell it the same way in both; `npm run check` catches mismatches.
+
+## Seen
+
+Below the paths are two rows the site builds itself: **Shared films** (on more than one path) and **Seen**. Triple-click an unwatched film you saw before you started the diary and confirm, and it moves to Seen and leaves every path it was on. Open it in Seen to move it back.
 
 ## Adding a path
 

@@ -122,10 +122,23 @@ a {
 }
 
 .top {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+/* Sits a little to the right of the page's center line. */
+.top-date {
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(-50% + 3rem));
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 1.05rem;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 .top-actions {
@@ -218,6 +231,7 @@ a {
   overflow: hidden;
   background: var(--frame-off);
   color: var(--frame-off-text);
+  user-select: none;
 }
 
 .frame.watched {
@@ -270,7 +284,7 @@ a {
   fill: var(--muted);
 }
 
-/* Shared films: neutral frames with a band of their paths' colors */
+/* Shared and Seen: neutral frames with a band of their paths' colors */
 
 .separator {
   border: none;
@@ -278,13 +292,26 @@ a {
   margin: 2.5rem 0 1.5rem;
 }
 
-.path.shared {
+.path.special {
   --path: #e7e5e4;
   --path-text: #1c1917;
 }
 
-.path.shared .ring-fill {
+.path.special .ring-fill {
   stroke: var(--text);
+}
+
+.seen-count {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.strip-hint {
+  align-self: center;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  color: var(--frame-off-text);
 }
 
 .frame-band {
@@ -309,7 +336,15 @@ a {
   }
 
   .top {
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.25rem;
+  }
+
+  .top-date {
+    position: static;
+    align-self: center;
+    transform: translateX(1.5rem);
   }
 }
 
@@ -411,6 +446,7 @@ a {
 .modal-actions {
   display: flex;
   justify-content: flex-end;
+  gap: 0.5rem;
   margin-top: 1.2rem;
 }
 

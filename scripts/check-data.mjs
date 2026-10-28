@@ -66,6 +66,7 @@ const allFilmIds = new Set(paths.flatMap((p) => (p.films ?? []).map(filmId)))
 for (const [id, entry] of Object.entries(diary)) {
   if (!allFilmIds.has(id)) warnings.push(`Diary entry "${id}" does not match any film in a path.`)
   if (!/^\d{4}-\d{2}-\d{2}$/.test(entry.date ?? '')) errors.push(`Diary entry "${id}" has an invalid date.`)
+  if ('seen' in entry && entry.seen !== true) errors.push(`Diary entry "${id}" has "seen" set to something other than true.`)
 }
 
 for (const w of warnings) console.warn(`warning: ${w}`)

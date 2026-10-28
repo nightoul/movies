@@ -31,10 +31,11 @@ export async function fetchDiary(token) {
 }
 
 // Always starts from the latest committed diary, so an entry saved from
-// another device is never overwritten.
+// another device is never overwritten. A null entry removes the film.
 export async function saveEntry(token, filmId, entry, message) {
   const latest = await fetchDiary(token)
-  const diary = sortKeys({ ...latest.diary, [filmId]: entry })
+  const { [filmId]: _, ...rest } = latest.diary
+  const diary = sortKeys(entry ? { ...rest, [filmId]: entry } : rest)
   const res = await fetch(API, {
     method: 'PUT',
     headers: { ...headers(token), 'Content-Type': 'application/json' },
