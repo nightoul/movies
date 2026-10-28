@@ -1,0 +1,258 @@
+{
+  "used": [
+    {
+      "id": "raspberry",
+      "hex": "#B5174E",
+      "en": "Raspberry",
+      "cs": "Malinová",
+      "path": "vietnam-war"
+    },
+    {
+      "id": "burgundy",
+      "hex": "#7A1F3D",
+      "en": "Burgundy",
+      "cs": "Vínová",
+      "path": "jack-nicholson"
+    },
+    {
+      "id": "teal",
+      "hex": "#0F6E6E",
+      "en": "Teal",
+      "cs": "Petrolejová",
+      "path": "disney-classics-of-the-20th-century"
+    },
+    {
+      "id": "burnt-orange",
+      "hex": "#B04A00",
+      "en": "Burnt orange",
+      "cs": "Pálená oranžová",
+      "path": "charlie-kaufman"
+    },
+    {
+      "id": "mustard",
+      "hex": "#8A7310",
+      "en": "Mustard",
+      "cs": "Hořčicová",
+      "path": "hollywood-classics-of-the-80s"
+    },
+    {
+      "id": "scarlet",
+      "hex": "#C8102E",
+      "en": "Scarlet",
+      "cs": "Šarlatová",
+      "path": "david-lynch"
+    },
+    {
+      "id": "salmon",
+      "hex": "#B5523F",
+      "en": "Salmon",
+      "cs": "Lososová",
+      "path": "film-noir"
+    },
+    {
+      "id": "olive",
+      "hex": "#636F25",
+      "en": "Olive",
+      "cs": "Olivová",
+      "path": "hollywood-classics-of-the-70s"
+    },
+    {
+      "id": "peacock",
+      "hex": "#0E5F78",
+      "en": "Peacock blue",
+      "cs": "Pávová modř",
+      "path": "western-classics"
+    },
+    {
+      "id": "coral",
+      "hex": "#BF4A2C",
+      "en": "Coral",
+      "cs": "Korálová",
+      "path": "sidney-lumet"
+    },
+    {
+      "id": "ochre",
+      "hex": "#94600F",
+      "en": "Ochre",
+      "cs": "Okrová",
+      "path": "classic-animation-outside-the-usa"
+    },
+    {
+      "id": "rose",
+      "hex": "#B83A63",
+      "en": "Rose",
+      "cs": "Růžová",
+      "path": "hollywood-classics-of-the-90s"
+    }
+  ],
+  "available": [
+    {
+      "id": "crimson",
+      "hex": "#B0203A",
+      "en": "Crimson",
+      "cs": "Karmínová"
+    },
+    {
+      "id": "vermilion",
+      "hex": "#C2361A",
+      "en": "Vermilion",
+      "cs": "Rumělková"
+    },
+    {
+      "id": "magenta",
+      "hex": "#A8146B",
+      "en": "Magenta",
+      "cs": "Purpurová"
+    },
+    {
+      "id": "fuchsia",
+      "hex": "#A3279A",
+      "en": "Fuchsia",
+      "cs": "Fuchsiová"
+    },
+    {
+      "id": "plum",
+      "hex": "#7D3C78",
+      "en": "Plum",
+      "cs": "Švestková"
+    },
+    {
+      "id": "amethyst",
+      "hex": "#8152B8",
+      "en": "Amethyst",
+      "cs": "Ametystová"
+    },
+    {
+      "id": "violet",
+      "hex": "#6A3FC0",
+      "en": "Violet",
+      "cs": "Fialová"
+    },
+    {
+      "id": "indigo",
+      "hex": "#4B3FA6",
+      "en": "Indigo",
+      "cs": "Indigová"
+    },
+    {
+      "id": "ultramarine",
+      "hex": "#3437B0",
+      "en": "Ultramarine",
+      "cs": "Ultramarínová"
+    },
+    {
+      "id": "cobalt",
+      "hex": "#1F4FB5",
+      "en": "Cobalt",
+      "cs": "Kobaltová"
+    },
+    {
+      "id": "navy",
+      "hex": "#23395B",
+      "en": "Navy",
+      "cs": "Námořnická modř"
+    },
+    {
+      "id": "cerulean",
+      "hex": "#1E6AA8",
+      "en": "Cerulean",
+      "cs": "Blankytná"
+    },
+    {
+      "id": "sky-blue",
+      "hex": "#2A7AB8",
+      "en": "Sky blue",
+      "cs": "Nebeská modř"
+    },
+    {
+      "id": "slate",
+      "hex": "#4F5D75",
+      "en": "Slate",
+      "cs": "Břidlicová"
+    },
+    {
+      "id": "turquoise",
+      "hex": "#127F86",
+      "en": "Turquoise",
+      "cs": "Tyrkysová"
+    },
+    {
+      "id": "jade",
+      "hex": "#0B7A55",
+      "en": "Jade",
+      "cs": "Nefritová"
+    },
+    {
+      "id": "emerald",
+      "hex": "#16784A",
+      "en": "Emerald",
+      "cs": "Smaragdová"
+    },
+    {
+      "id": "pine",
+      "hex": "#2D5E3E",
+      "en": "Pine green",
+      "cs": "Jedlová zelená"
+    },
+    {
+      "id": "moss",
+      "hex": "#55702A",
+      "en": "Moss green",
+      "cs": "Mechová zelená"
+    },
+    {
+      "id": "bronze",
+      "hex": "#86622B",
+      "en": "Bronze",
+      "cs": "Bronzová"
+    },
+    {
+      "id": "terracotta",
+      "hex": "#A8502F",
+      "en": "Terracotta",
+      "cs": "Terakotová"
+    },
+    {
+      "id": "rust",
+      "hex": "#9A3F1C",
+      "en": "Rust",
+      "cs": "Rezavá"
+    },
+    {
+      "id": "chestnut",
+      "hex": "#80432A",
+      "en": "Chestnut",
+      "cs": "Kaštanová"
+    },
+    {
+      "id": "chocolate",
+      "hex": "#5E3621",
+      "en": "Chocolate",
+      "cs": "Čokoládová"
+    },
+    {
+      "id": "lavender",
+      "hex": "#6F5BB0",
+      "en": "Lavender",
+      "cs": "Levandulová"
+    },
+    {
+      "id": "mint",
+      "hex": "#1C7A62",
+      "en": "Mint",
+      "cs": "Mátová"
+    },
+    {
+      "id": "lime",
+      "hex": "#4F7A12",
+      "en": "Lime",
+      "cs": "Limetková"
+    },
+    {
+      "id": "mahogany",
+      "hex": "#6B2A22",
+      "en": "Mahogany",
+      "cs": "Mahagonová"
+    }
+  ]
+}
