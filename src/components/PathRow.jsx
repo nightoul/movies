@@ -4,17 +4,24 @@ export default function PathRow({ path, diary, onOpen }) {
   const watched = path.films.filter((f) => diary[f.id]).length
   const total = path.films.length
   const complete = total > 0 && watched === total
+  const style = path.shared ? undefined : { '--path': path.color.hex, '--path-text': path.color.text }
 
   return (
-    <article className="path" style={{ '--path': path.color.hex, '--path-text': path.color.text }}>
+    <article className={path.shared ? 'path shared' : 'path'} style={style}>
       <div className="path-name">
         <h2>
           {path.name}
           {complete && <span className="complete" title="Path complete"> ★</span>}
         </h2>
         <div className="color-name">
-          <span className="dot" />
-          {path.color.en} · {path.color.cs}
+          {path.shared ? (
+            'On more than one path'
+          ) : (
+            <>
+              <span className="dot" />
+              {path.color.en} · {path.color.cs}
+            </>
+          )}
         </div>
       </div>
 
@@ -23,6 +30,7 @@ export default function PathRow({ path, diary, onOpen }) {
           {path.films.map((f) =>
             diary[f.id] ? (
               <button key={f.id} className="frame watched" onClick={() => onOpen(f.id)}>
+                {path.shared && <PathBand film={f} />}
                 <span className="frame-title">{f.title}</span>
                 <span className="frame-year">{f.year}</span>
               </button>
@@ -51,5 +59,16 @@ export default function PathRow({ path, diary, onOpen }) {
         </text>
       </svg>
     </article>
+  )
+}
+
+// The colors of every path a shared film belongs to, across the top of its frame.
+function PathBand({ film }) {
+  return (
+    <span className="frame-band">
+      {film.paths.map((p) => (
+        <span key={p.id} style={{ background: p.color.hex }} />
+      ))}
+    </span>
   )
 }

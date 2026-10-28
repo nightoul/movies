@@ -86,7 +86,7 @@
       "en": "Lime",
       "cs": "Limetková",
       "tier": 2,
-      "path": "cartoons-outside-us"
+      "path": "european-cartoons"
     },
     {
       "id": "burgundy",
@@ -127,6 +127,22 @@
       "cs": "Tyrkysová",
       "tier": 2,
       "path": "milos-forman"
+    },
+    {
+      "id": "teal",
+      "hex": "#0F6E6E",
+      "en": "Teal",
+      "cs": "Petrolejová",
+      "tier": 2,
+      "path": "lars-von-trier"
+    },
+    {
+      "id": "beige",
+      "hex": "#D8C3A0",
+      "en": "Beige",
+      "cs": "Béžová",
+      "tier": 2,
+      "path": "soviet-classics"
     }
   ],
   "available": [
@@ -135,20 +151,6 @@
       "hex": "#8CC152",
       "en": "Light green",
       "cs": "Světle zelená",
-      "tier": 2
-    },
-    {
-      "id": "beige",
-      "hex": "#D8C3A0",
-      "en": "Beige",
-      "cs": "Béžová",
-      "tier": 2
-    },
-    {
-      "id": "teal",
-      "hex": "#0F6E6E",
-      "en": "Teal",
-      "cs": "Petrolejová",
       "tier": 2
     },
     {

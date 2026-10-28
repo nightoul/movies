@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import bundledDiary from './data/diary.json'
-import { films, paths, today } from './catalog.js'
+import { films, paths, sharedPath } from './catalog.js'
 import { fetchDiary, loadToken, saveEntry, storeToken } from './github.js'
 import PathRow from './components/PathRow.jsx'
 import Modal from './components/Modal.jsx'
@@ -22,8 +22,6 @@ export default function App() {
       .catch(() => {})
   }, [token])
 
-  const month = today().slice(0, 7)
-  const thisMonth = Object.values(diary).filter((e) => e.date.startsWith(month)).length
   const close = () => setModal(null)
 
   async function save(filmId, entry, message) {
@@ -46,10 +44,6 @@ export default function App() {
   return (
     <main className="page">
       <header className="top">
-        <div className="stat">
-          <div className="stat-label">This month</div>
-          <div className="stat-value">{thisMonth}</div>
-        </div>
         <div className="top-actions">
           {token ? (
             <button className="link-button" onClick={disconnect}>
@@ -76,6 +70,10 @@ export default function App() {
           <PathRow key={p.id} path={p} diary={diary} onOpen={(filmId) => setModal({ kind: 'film', filmId })} />
         ))}
       </section>
+
+      <hr className="separator" />
+
+      <PathRow path={sharedPath} diary={diary} onOpen={(filmId) => setModal({ kind: 'film', filmId })} />
 
       {modal && (
         <Modal onClose={close}>

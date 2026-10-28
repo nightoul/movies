@@ -123,7 +123,7 @@ a {
 
 .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 2rem;
 }
@@ -132,23 +132,6 @@ a {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-}
-
-.stat {
-  background: var(--surface-muted);
-  border-radius: 10px;
-  padding: 0.6rem 1rem;
-}
-
-.stat-label {
-  font-size: 0.8125rem;
-  color: var(--muted);
-}
-
-.stat-value {
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
 /* Path rows */
@@ -285,6 +268,33 @@ a {
 .ring text {
   font-size: 10px;
   fill: var(--muted);
+}
+
+/* Shared films: neutral frames with a band of their paths' colors */
+
+.separator {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0 1.5rem;
+}
+
+.path.shared {
+  --path: #e7e5e4;
+  --path-text: #1c1917;
+}
+
+.path.shared .ring-fill {
+  stroke: var(--text);
+}
+
+.frame-band {
+  display: flex;
+  height: 6px;
+  margin: -5px -5px auto;
+}
+
+.frame-band span {
+  flex: 1;
 }
 
 @media (max-width: 640px) {

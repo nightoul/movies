@@ -21,6 +21,16 @@ for (const p of paths) {
   }
 }
 
+// Always the last row: films that appear on more than one path, by year.
+export const sharedPath = {
+  id: 'shared',
+  name: 'Shared films',
+  shared: true,
+  films: [...films.values()]
+    .filter((f) => f.paths.length > 1)
+    .sort((a, b) => a.year - b.year || a.title.localeCompare(b.title)),
+}
+
 export function today() {
   const d = new Date()
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
