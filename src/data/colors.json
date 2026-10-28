@@ -22,7 +22,7 @@
       "en": "Pink",
       "cs": "Růžová",
       "tier": 1,
-      "path": "disney-classics-of-the-20th-century"
+      "path": "disney-20th-century"
     },
     {
       "id": "red",
@@ -38,7 +38,7 @@
       "en": "Orange",
       "cs": "Oranžová",
       "tier": 1,
-      "path": "hollywood-classics-of-the-80s"
+      "path": "hollywood-classics-80s"
     },
     {
       "id": "green",
@@ -62,7 +62,7 @@
       "en": "Yellow",
       "cs": "Žlutá",
       "tier": 1,
-      "path": "hollywood-classics-of-the-70s"
+      "path": "hollywood-classics-70s"
     },
     {
       "id": "lavender",
@@ -70,7 +70,7 @@
       "en": "Lavender",
       "cs": "Levandulová",
       "tier": 2,
-      "path": "western-classics"
+      "path": "western"
     },
     {
       "id": "dark-blue",
@@ -86,7 +86,7 @@
       "en": "Lime",
       "cs": "Limetková",
       "tier": 2,
-      "path": "classic-animation-outside-the-usa"
+      "path": "cartoons-outside-us"
     },
     {
       "id": "burgundy",
@@ -94,7 +94,7 @@
       "en": "Burgundy",
       "cs": "Vínová",
       "tier": 2,
-      "path": "hollywood-classics-of-the-90s"
+      "path": "hollywood-classics-90s"
     }
   ],
   "available": [
