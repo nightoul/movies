@@ -22,7 +22,7 @@ A film is identified by its title and year, so the same film in two paths (*Chin
 npm run new-path -- "Stanley Kubrick"
 ```
 
-This picks a random unused color, moves it from `available` to `used`, and appends an empty path to `paths.json`. Colors come in tiers (1 = basic like red or blue, 2 = common shades like dark blue or beige, 3 = less known like ochre or cerulean), and the script only moves to the next tier once the previous one is used up. Light colors get dark frame text automatically. To give a path a color of your choice, or a new random one:
+This picks a random unused color, moves it from `available` to `used`, and appends an empty path to `paths.json`. Colors come in tiers (1 = basic like red or blue, 2 = common shades like dark blue or beige, 3 = less known like ochre or mint), and the script only moves to the next tier once the previous one is used up. Light colors get dark frame text automatically. To give a path a color of your choice, or a new random one:
 
 ```bash
 npm run set-color -- film-noir burgundy

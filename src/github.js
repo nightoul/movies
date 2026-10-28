@@ -56,7 +56,7 @@ export async function checkToken(token) {
   if (!repo.permissions?.push) throw new GitHubError(403)
 }
 
-export class GitHubError extends Error {
+class GitHubError extends Error {
   constructor(status) {
     super(
       status === 401

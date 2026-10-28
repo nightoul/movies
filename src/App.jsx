@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import bundledDiary from './data/diary.json'
 import { films, paths, sharedPath } from './catalog.js'
 import { fetchDiary, loadToken, saveEntry, storeToken } from './github.js'
@@ -22,7 +22,7 @@ export default function App() {
       .catch(() => {})
   }, [token])
 
-  const close = () => setModal(null)
+  const close = useCallback(() => setModal(null), [])
 
   async function save(filmId, entry, message) {
     const next = await saveEntry(token, filmId, entry, message)
