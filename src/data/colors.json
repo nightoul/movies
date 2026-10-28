@@ -1,30 +1,6 @@
 {
   "used": [
     {
-      "id": "purple",
-      "hex": "#7B3FA0",
-      "en": "Purple",
-      "cs": "Fialová",
-      "tier": 1,
-      "path": "vietnam-war"
-    },
-    {
-      "id": "brown",
-      "hex": "#7B4A2A",
-      "en": "Brown",
-      "cs": "Hnědá",
-      "tier": 1,
-      "path": "jack-nicholson"
-    },
-    {
-      "id": "pink",
-      "hex": "#E75A9B",
-      "en": "Pink",
-      "cs": "Růžová",
-      "tier": 1,
-      "path": "disney-20th-century"
-    },
-    {
       "id": "red",
       "hex": "#D32F2F",
       "en": "Red",
@@ -47,14 +23,6 @@
       "cs": "Zelená",
       "tier": 1,
       "path": "david-lynch"
-    },
-    {
-      "id": "blue",
-      "hex": "#1F5FBF",
-      "en": "Blue",
-      "cs": "Modrá",
-      "tier": 1,
-      "path": "film-noir"
     },
     {
       "id": "yellow",
@@ -87,30 +55,6 @@
       "cs": "Limetková",
       "tier": 2,
       "path": "european-cartoons"
-    },
-    {
-      "id": "burgundy",
-      "hex": "#7A1F3D",
-      "en": "Burgundy",
-      "cs": "Vínová",
-      "tier": 2,
-      "path": "hollywood-classics-90s"
-    },
-    {
-      "id": "light-blue",
-      "hex": "#7DB9E8",
-      "en": "Light blue",
-      "cs": "Světle modrá",
-      "tier": 2,
-      "path": "viggo-mortensen"
-    },
-    {
-      "id": "dark-green",
-      "hex": "#1E5631",
-      "en": "Dark green",
-      "cs": "Tmavě zelená",
-      "tier": 2,
-      "path": "sam-mendes"
     },
     {
       "id": "olive",
@@ -175,23 +119,89 @@
       "cs": "Azurová",
       "tier": 3,
       "path": "spanish-cinema"
-    }
-  ],
-  "available": [
-    {
-      "id": "magenta",
-      "hex": "#C2187A",
-      "en": "Magenta",
-      "cs": "Purpurová",
-      "tier": 3
     },
     {
       "id": "plum",
       "hex": "#7D3C78",
       "en": "Plum",
       "cs": "Švestková",
-      "tier": 3
+      "tier": 3,
+      "path": "stanley-kubrick"
     },
+    {
+      "id": "salmon",
+      "hex": "#F08A72",
+      "en": "Salmon",
+      "cs": "Lososová",
+      "tier": 3,
+      "path": "marlon-brando"
+    },
+    {
+      "id": "old-rose",
+      "hex": "#C08081",
+      "en": "Old rose",
+      "cs": "Starorůžová",
+      "tier": 3,
+      "path": "space"
+    },
+    {
+      "id": "purple",
+      "hex": "#7B3FA0",
+      "en": "Purple",
+      "cs": "Fialová",
+      "tier": 1,
+      "path": "hollywood-classics-90s"
+    },
+    {
+      "id": "dark-green",
+      "hex": "#1E5631",
+      "en": "Dark green",
+      "cs": "Tmavě zelená",
+      "tier": 2,
+      "path": "vietnam-war"
+    },
+    {
+      "id": "light-blue",
+      "hex": "#7DB9E8",
+      "en": "Light blue",
+      "cs": "Světle modrá",
+      "tier": 2,
+      "path": "disney-20th-century"
+    },
+    {
+      "id": "burgundy",
+      "hex": "#7A1F3D",
+      "en": "Burgundy",
+      "cs": "Vínová",
+      "tier": 2,
+      "path": "film-noir"
+    },
+    {
+      "id": "pink",
+      "hex": "#E75A9B",
+      "en": "Pink",
+      "cs": "Růžová",
+      "tier": 1,
+      "path": "sam-mendes"
+    },
+    {
+      "id": "blue",
+      "hex": "#1F5FBF",
+      "en": "Blue",
+      "cs": "Modrá",
+      "tier": 1,
+      "path": "jack-nicholson"
+    },
+    {
+      "id": "brown",
+      "hex": "#7B4A2A",
+      "en": "Brown",
+      "cs": "Hnědá",
+      "tier": 1,
+      "path": "viggo-mortensen"
+    }
+  ],
+  "available": [
     {
       "id": "indigo",
       "hex": "#4B3FA6",
@@ -221,27 +231,6 @@
       "tier": 3
     },
     {
-      "id": "terracotta",
-      "hex": "#B5573A",
-      "en": "Terracotta",
-      "cs": "Terakotová",
-      "tier": 3
-    },
-    {
-      "id": "salmon",
-      "hex": "#F08A72",
-      "en": "Salmon",
-      "cs": "Lososová",
-      "tier": 3
-    },
-    {
-      "id": "old-rose",
-      "hex": "#C08081",
-      "en": "Old rose",
-      "cs": "Starorůžová",
-      "tier": 3
-    },
-    {
       "id": "mint",
       "hex": "#3EB489",
       "en": "Mint",
@@ -260,6 +249,20 @@
       "hex": "#F7B58C",
       "en": "Peach",
       "cs": "Broskvová",
+      "tier": 3
+    },
+    {
+      "id": "magenta",
+      "hex": "#C2187A",
+      "en": "Magenta",
+      "cs": "Purpurová",
+      "tier": 3
+    },
+    {
+      "id": "terracotta",
+      "hex": "#B5573A",
+      "en": "Terracotta",
+      "cs": "Terakotová",
       "tier": 3
     }
   ]

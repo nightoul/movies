@@ -59,13 +59,14 @@
   {
     "id": "hollywood-classics-90s",
     "name": "Hollywood classics '90s",
-    "color": "burgundy",
+    "color": "purple",
     "films": [
       {"title":"Goodfellas","year":1990},
       {"title":"The Silence of the Lambs","year":1991},
       {"title":"Thelma & Louise","year":1991},
       {"title":"Unforgiven","year":1992},
       {"title":"Reservoir Dogs","year":1992},
+      {"title":"Glengarry Glen Ross","year":1992},
       {"title":"Schindler's List","year":1993},
       {"title":"Groundhog Day","year":1993},
       {"title":"What's Eating Gilbert Grape","year":1993},
@@ -88,28 +89,9 @@
     ]
   },
   {
-    "id": "vietnam-war",
-    "name": "Vietnam war",
-    "color": "purple",
-    "films": [
-      {"title":"The Deer Hunter","year":1978},
-      {"title":"Coming Home","year":1978},
-      {"title":"Apocalypse Now","year":1979},
-      {"title":"Platoon","year":1986},
-      {"title":"Full Metal Jacket","year":1987},
-      {"title":"Good Morning, Vietnam","year":1987},
-      {"title":"Hamburger Hill","year":1987},
-      {"title":"Casualties of War","year":1989},
-      {"title":"Born on the Fourth of July","year":1989},
-      {"title":"Heaven & Earth","year":1993},
-      {"title":"We Were Soldiers","year":2002},
-      {"title":"Da 5 Bloods","year":2020}
-    ]
-  },
-  {
     "id": "jack-nicholson",
     "name": "Jack Nicholson",
-    "color": "brown",
+    "color": "blue",
     "films": [
       {"title":"Easy Rider","year":1969},
       {"title":"Five Easy Pieces","year":1970},
@@ -136,7 +118,7 @@
   {
     "id": "disney-20th-century",
     "name": "Disney 20th century",
-    "color": "pink",
+    "color": "light-blue",
     "films": [
       {"title":"Mickey Mouse shorts","year":1928},
       {"title":"Silly Symphonies","year":1929},
@@ -214,7 +196,7 @@
   {
     "id": "film-noir",
     "name": "Film noir",
-    "color": "blue",
+    "color": "burgundy",
     "films": [
       {"title":"The Maltese Falcon","year":1941},
       {"title":"Double Indemnity","year":1944},
@@ -335,7 +317,7 @@
   {
     "id": "viggo-mortensen",
     "name": "Viggo Mortensen",
-    "color": "light-blue",
+    "color": "brown",
     "films": [
       {"title":"The Indian Runner","year":1991},
       {"title":"Carlito's Way","year":1993},
@@ -359,9 +341,28 @@
     ]
   },
   {
+    "id": "vietnam-war",
+    "name": "Vietnam war",
+    "color": "dark-green",
+    "films": [
+      {"title":"The Deer Hunter","year":1978},
+      {"title":"Coming Home","year":1978},
+      {"title":"Apocalypse Now","year":1979},
+      {"title":"Platoon","year":1986},
+      {"title":"Full Metal Jacket","year":1987},
+      {"title":"Good Morning, Vietnam","year":1987},
+      {"title":"Hamburger Hill","year":1987},
+      {"title":"Casualties of War","year":1989},
+      {"title":"Born on the Fourth of July","year":1989},
+      {"title":"Heaven & Earth","year":1993},
+      {"title":"We Were Soldiers","year":2002},
+      {"title":"Da 5 Bloods","year":2020}
+    ]
+  },
+  {
     "id": "sam-mendes",
     "name": "Sam Mendes",
-    "color": "dark-green",
+    "color": "pink",
     "films": [
       {"title":"American Beauty","year":1999},
       {"title":"Road to Perdition","year":2002},
@@ -562,6 +563,70 @@
       {"title":"Talk to Her","year":2002},
       {"title":"The Sea Inside","year":2004},
       {"title":"Pan's Labyrinth","year":2006}
+    ]
+  },
+  {
+    "id": "stanley-kubrick",
+    "name": "Stanley Kubrick",
+    "color": "plum",
+    "films": [
+      {"title":"Killer's Kiss","year":1955},
+      {"title":"The Killing","year":1956},
+      {"title":"Paths of Glory","year":1957},
+      {"title":"Spartacus","year":1960},
+      {"title":"Lolita","year":1962},
+      {"title":"Dr. Strangelove","year":1964},
+      {"title":"2001: A Space Odyssey","year":1968},
+      {"title":"A Clockwork Orange","year":1971},
+      {"title":"Barry Lyndon","year":1975},
+      {"title":"The Shining","year":1980},
+      {"title":"Full Metal Jacket","year":1987},
+      {"title":"Eyes Wide Shut","year":1999}
+    ]
+  },
+  {
+    "id": "marlon-brando",
+    "name": "Marlon Brando",
+    "color": "salmon",
+    "films": [
+      {"title":"A Streetcar Named Desire","year":1951},
+      {"title":"Viva Zapata!","year":1952},
+      {"title":"Julius Caesar","year":1953},
+      {"title":"The Wild One","year":1953},
+      {"title":"On the Waterfront","year":1954},
+      {"title":"Guys and Dolls","year":1955},
+      {"title":"The Young Lions","year":1958},
+      {"title":"One-Eyed Jacks","year":1961},
+      {"title":"Mutiny on the Bounty","year":1962},
+      {"title":"Reflections in a Golden Eye","year":1967},
+      {"title":"Burn!","year":1969},
+      {"title":"The Godfather","year":1972},
+      {"title":"Last Tango in Paris","year":1972},
+      {"title":"The Missouri Breaks","year":1976},
+      {"title":"Superman","year":1978},
+      {"title":"Apocalypse Now","year":1979},
+      {"title":"The Freshman","year":1990}
+    ]
+  },
+  {
+    "id": "space",
+    "name": "Space",
+    "color": "old-rose",
+    "films": [
+      {"title":"2001: A Space Odyssey","year":1968},
+      {"title":"Solaris","year":1972},
+      {"title":"Silent Running","year":1972},
+      {"title":"Alien","year":1979},
+      {"title":"The Right Stuff","year":1983},
+      {"title":"Apollo 13","year":1995},
+      {"title":"Contact","year":1997},
+      {"title":"Sunshine","year":2007},
+      {"title":"Moon","year":2009},
+      {"title":"Gravity","year":2013},
+      {"title":"Interstellar","year":2014},
+      {"title":"The Martian","year":2015},
+      {"title":"First Man","year":2018},
+      {"title":"Ad Astra","year":2019}
     ]
   }
 ]

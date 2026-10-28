@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "check": "node scripts/check-data.mjs",
     "new-path": "node scripts/new-path.mjs",
+    "set-color": "node scripts/set-color.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
