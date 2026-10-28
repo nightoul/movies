@@ -136,13 +136,19 @@
     "name": "Disney 20th century",
     "color": "pink",
     "films": [
+      {"title":"Mickey Mouse shorts","year":1928},
+      {"title":"Silly Symphonies","year":1929},
       {"title":"Snow White and the Seven Dwarfs","year":1937},
+      {"title":"Donald Duck shorts","year":1937},
+      {"title":"Pluto shorts","year":1937},
+      {"title":"Goofy shorts","year":1939},
       {"title":"Pinocchio","year":1940},
       {"title":"Fantasia","year":1940},
       {"title":"Dumbo","year":1941},
       {"title":"Bambi","year":1942},
       {"title":"Cinderella","year":1950},
       {"title":"Alice in Wonderland","year":1951},
+      {"title":"Chip 'n' Dale shorts","year":1951},
       {"title":"Peter Pan","year":1953},
       {"title":"Lady and the Tramp","year":1955},
       {"title":"Sleeping Beauty","year":1959},
@@ -153,10 +159,17 @@
       {"title":"Robin Hood","year":1973},
       {"title":"The Rescuers","year":1977},
       {"title":"The Fox and the Hound","year":1981},
+      {"title":"Adventures of the Gummi Bears","year":1985},
+      {"title":"DuckTales","year":1987},
       {"title":"The Little Mermaid","year":1989},
+      {"title":"Chip 'n Dale: Rescue Rangers","year":1989},
+      {"title":"TaleSpin","year":1990},
       {"title":"Beauty and the Beast","year":1991},
+      {"title":"Darkwing Duck","year":1991},
       {"title":"Aladdin","year":1992},
+      {"title":"Goof Troop","year":1992},
       {"title":"The Lion King","year":1994},
+      {"title":"Gargoyles","year":1994},
       {"title":"Pocahontas","year":1995},
       {"title":"The Hunchback of Notre Dame","year":1996},
       {"title":"Hercules","year":1997},
@@ -307,6 +320,83 @@
       {"title":"Spirited Away","year":2001},
       {"title":"The Triplets of Belleville","year":2003},
       {"title":"Persepolis","year":2007}
+    ]
+  },
+  {
+    "id": "viggo-mortensen",
+    "name": "Viggo Mortensen",
+    "color": "light-blue",
+    "films": [
+      {"title":"The Indian Runner","year":1991},
+      {"title":"Carlito's Way","year":1993},
+      {"title":"Crimson Tide","year":1995},
+      {"title":"G.I. Jane","year":1997},
+      {"title":"A Perfect Murder","year":1998},
+      {"title":"The Lord of the Rings: The Fellowship of the Ring","year":2001},
+      {"title":"The Lord of the Rings: The Two Towers","year":2002},
+      {"title":"The Lord of the Rings: The Return of the King","year":2003},
+      {"title":"Hidalgo","year":2004},
+      {"title":"A History of Violence","year":2005},
+      {"title":"Alatriste","year":2006},
+      {"title":"Eastern Promises","year":2007},
+      {"title":"Appaloosa","year":2008},
+      {"title":"The Road","year":2009},
+      {"title":"A Dangerous Method","year":2011},
+      {"title":"Jauja","year":2014},
+      {"title":"Captain Fantastic","year":2016},
+      {"title":"Green Book","year":2018},
+      {"title":"Crimes of the Future","year":2022}
+    ]
+  },
+  {
+    "id": "sam-mendes",
+    "name": "Sam Mendes",
+    "color": "dark-green",
+    "films": [
+      {"title":"American Beauty","year":1999},
+      {"title":"Road to Perdition","year":2002},
+      {"title":"Jarhead","year":2005},
+      {"title":"Revolutionary Road","year":2008},
+      {"title":"Away We Go","year":2009},
+      {"title":"Skyfall","year":2012},
+      {"title":"Spectre","year":2015},
+      {"title":"1917","year":2019},
+      {"title":"Empire of Light","year":2022}
+    ]
+  },
+  {
+    "id": "terrence-malick",
+    "name": "Terrence Malick",
+    "color": "olive",
+    "films": [
+      {"title":"Badlands","year":1973},
+      {"title":"Days of Heaven","year":1978},
+      {"title":"The Thin Red Line","year":1998},
+      {"title":"The New World","year":2005},
+      {"title":"The Tree of Life","year":2011},
+      {"title":"To the Wonder","year":2012},
+      {"title":"Knight of Cups","year":2015},
+      {"title":"Song to Song","year":2017},
+      {"title":"A Hidden Life","year":2019}
+    ]
+  },
+  {
+    "id": "milos-forman",
+    "name": "Miloš Forman",
+    "color": "turquoise",
+    "films": [
+      {"title":"Černý Petr","year":1964},
+      {"title":"Lásky jedné plavovlásky","year":1965},
+      {"title":"Hoří, má panenko","year":1967},
+      {"title":"Taking Off","year":1971},
+      {"title":"One Flew Over the Cuckoo's Nest","year":1975},
+      {"title":"Hair","year":1979},
+      {"title":"Ragtime","year":1981},
+      {"title":"Amadeus","year":1984},
+      {"title":"Valmont","year":1989},
+      {"title":"The People vs. Larry Flynt","year":1996},
+      {"title":"Man on the Moon","year":1999},
+      {"title":"Goya's Ghosts","year":2006}
     ]
   }
 ]

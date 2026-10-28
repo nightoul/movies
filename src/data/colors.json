@@ -95,35 +95,46 @@
       "cs": "Vínová",
       "tier": 2,
       "path": "hollywood-classics-90s"
-    }
-  ],
-  "available": [
+    },
     {
       "id": "light-blue",
       "hex": "#7DB9E8",
       "en": "Light blue",
       "cs": "Světle modrá",
-      "tier": 2
+      "tier": 2,
+      "path": "viggo-mortensen"
     },
     {
       "id": "dark-green",
       "hex": "#1E5631",
       "en": "Dark green",
       "cs": "Tmavě zelená",
-      "tier": 2
+      "tier": 2,
+      "path": "sam-mendes"
     },
     {
-      "id": "light-green",
-      "hex": "#8CC152",
-      "en": "Light green",
-      "cs": "Světle zelená",
-      "tier": 2
+      "id": "olive",
+      "hex": "#6B7A1F",
+      "en": "Olive",
+      "cs": "Olivová",
+      "tier": 2,
+      "path": "terrence-malick"
     },
     {
       "id": "turquoise",
       "hex": "#20B2AA",
       "en": "Turquoise",
       "cs": "Tyrkysová",
+      "tier": 2,
+      "path": "milos-forman"
+    }
+  ],
+  "available": [
+    {
+      "id": "light-green",
+      "hex": "#8CC152",
+      "en": "Light green",
+      "cs": "Světle zelená",
       "tier": 2
     },
     {
@@ -138,13 +149,6 @@
       "hex": "#0F6E6E",
       "en": "Teal",
       "cs": "Petrolejová",
-      "tier": 2
-    },
-    {
-      "id": "olive",
-      "hex": "#6B7A1F",
-      "en": "Olive",
-      "cs": "Olivová",
       "tier": 2
     },
     {
