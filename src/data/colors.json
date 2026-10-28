@@ -143,23 +143,41 @@
       "cs": "Béžová",
       "tier": 2,
       "path": "soviet-classics"
-    }
-  ],
-  "available": [
+    },
     {
       "id": "light-green",
       "hex": "#8CC152",
       "en": "Light green",
       "cs": "Světle zelená",
-      "tier": 2
+      "tier": 2,
+      "path": "classics-of-comedy"
     },
     {
       "id": "crimson",
       "hex": "#B0203A",
       "en": "Crimson",
       "cs": "Karmínová",
-      "tier": 3
+      "tier": 3,
+      "path": "czech-cartoons"
     },
+    {
+      "id": "coral",
+      "hex": "#F2704F",
+      "en": "Coral",
+      "cs": "Korálová",
+      "tier": 3,
+      "path": "robert-de-niro"
+    },
+    {
+      "id": "cyan",
+      "hex": "#0093C4",
+      "en": "Cyan",
+      "cs": "Azurová",
+      "tier": 3,
+      "path": "spanish-cinema"
+    }
+  ],
+  "available": [
     {
       "id": "magenta",
       "hex": "#C2187A",
@@ -217,13 +235,6 @@
       "tier": 3
     },
     {
-      "id": "coral",
-      "hex": "#F2704F",
-      "en": "Coral",
-      "cs": "Korálová",
-      "tier": 3
-    },
-    {
       "id": "old-rose",
       "hex": "#C08081",
       "en": "Old rose",
@@ -242,13 +253,6 @@
       "hex": "#A89F68",
       "en": "Khaki",
       "cs": "Khaki",
-      "tier": 3
-    },
-    {
-      "id": "cyan",
-      "hex": "#0093C4",
-      "en": "Cyan",
-      "cs": "Azurová",
       "tier": 3
     },
     {
