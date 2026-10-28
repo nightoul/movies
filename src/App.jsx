@@ -51,16 +51,20 @@ export default function App() {
           <div className="stat-value">{thisMonth}</div>
         </div>
         <div className="top-actions">
-          <button
-            className="link-button"
-            onClick={() => setModal({ kind: 'connect' })}
-            title={token ? 'Connected to GitHub' : 'Connect GitHub to save entries'}
-          >
-            {token ? 'Connected' : 'Connect GitHub'}
-          </button>
+          {token ? (
+            <button className="link-button" onClick={disconnect}>
+              Disconnect
+            </button>
+          ) : (
+            <button className="link-button" onClick={() => setModal({ kind: 'connect' })}>
+              Connect GitHub
+            </button>
+          )}
           <button
             className="primary"
-            onClick={() => setModal(token ? { kind: 'log' } : { kind: 'connect', then: { kind: 'log' } })}
+            disabled={!token}
+            title={token ? undefined : 'Connect GitHub to log screenings'}
+            onClick={() => setModal({ kind: 'log' })}
           >
             Log a screening
           </button>
@@ -95,7 +99,7 @@ export default function App() {
             />
           )}
           {modal.kind === 'connect' && (
-            <ConnectForm connected={Boolean(token)} onConnect={connect} onDisconnect={disconnect} onClose={close} />
+            <ConnectForm onConnect={connect} onClose={close} />
           )}
         </Modal>
       )}

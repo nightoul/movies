@@ -4,7 +4,7 @@ import { ModalHeader } from './Modal.jsx'
 
 const NEW_TOKEN_URL = 'https://github.com/settings/personal-access-tokens/new'
 
-export default function ConnectForm({ connected, onConnect, onDisconnect, onClose }) {
+export default function ConnectForm({ onConnect, onClose }) {
   const [token, setToken] = useState('')
   const [error, setError] = useState('')
   const [checking, setChecking] = useState(false)
@@ -23,18 +23,6 @@ export default function ConnectForm({ connected, onConnect, onDisconnect, onClos
       setError(err.message)
       setChecking(false)
     }
-  }
-
-  if (connected) {
-    return (
-      <div className="modal-body">
-        <ModalHeader title="Connected to GitHub" onClose={onClose} />
-        <p className="muted">Entries you log are committed to the diary in the nightoul/movies repo.</p>
-        <div className="modal-actions">
-          <button onClick={onDisconnect}>Disconnect</button>
-        </div>
-      </div>
-    )
   }
 
   return (

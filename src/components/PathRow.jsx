@@ -6,7 +6,7 @@ export default function PathRow({ path, diary, onOpen }) {
   const complete = total > 0 && watched === total
 
   return (
-    <article className="path" style={{ '--path': path.color.hex }}>
+    <article className="path" style={{ '--path': path.color.hex, '--path-text': path.color.text }}>
       <div className="path-name">
         <h2>
           {path.name}

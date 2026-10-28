@@ -1,8 +1,9 @@
 import colors from './data/colors.json'
 import pathsData from './data/paths.json'
+import { textOn } from './colors.js'
 import { filmId } from './films.js'
 
-const colorById = Object.fromEntries(colors.used.map((c) => [c.id, c]))
+const colorById = Object.fromEntries(colors.used.map((c) => [c.id, { ...c, text: textOn(c.hex) }]))
 
 export const paths = pathsData.map((p) => ({
   ...p,

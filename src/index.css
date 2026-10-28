@@ -68,8 +68,8 @@ button.primary {
 }
 
 button:disabled {
-  opacity: 0.6;
-  cursor: progress;
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .link-button {
@@ -239,7 +239,7 @@ a {
 
 .frame.watched {
   background: var(--path);
-  color: #fff;
+  color: var(--path-text);
   transition: transform 0.15s;
 }
 

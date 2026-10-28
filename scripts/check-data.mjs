@@ -1,5 +1,6 @@
 // Validates the data files. Runs in CI before every deploy.
 import { readFileSync } from 'node:fs'
+import { contrast, textOn } from '../src/colors.js'
 import { filmId } from '../src/films.js'
 
 const read = (name) => JSON.parse(readFileSync(new URL(`../src/data/${name}`, import.meta.url), 'utf8'))
@@ -10,17 +11,19 @@ const diary = read('diary.json')
 const errors = []
 const warnings = []
 
-// Colors: unique ids and hexes, readable white text, used <-> paths in sync.
+// Colors: unique ids, hexes and names, a known tier, readable frame text,
+// used <-> paths in sync.
 const allColors = [...colors.used, ...colors.available]
 const seen = new Set()
 for (const c of allColors) {
   for (const key of ['id', 'hex', 'en', 'cs']) if (!c[key]) errors.push(`Color ${JSON.stringify(c)} is missing "${key}".`)
-  if (seen.has(c.id)) errors.push(`Color id "${c.id}" appears more than once.`)
-  if (seen.has(c.hex.toLowerCase())) errors.push(`Color hex ${c.hex} appears more than once.`)
-  seen.add(c.id)
-  seen.add(c.hex.toLowerCase())
-  const ratio = contrastWithWhite(c.hex)
-  if (ratio < 4.5) warnings.push(`Color "${c.id}" has only ${ratio.toFixed(2)}:1 contrast with white text.`)
+  if (![1, 2, 3].includes(c.tier)) errors.push(`Color "${c.id}" needs a tier of 1, 2 or 3.`)
+  for (const [kind, value] of [['id', c.id], ['hex', c.hex.toLowerCase()], ['English name', c.en], ['Czech name', c.cs]]) {
+    if (seen.has(`${kind}:${value}`)) errors.push(`Color ${kind} "${value}" appears more than once.`)
+    seen.add(`${kind}:${value}`)
+  }
+  const ratio = contrast(c.hex, textOn(c.hex))
+  if (ratio < 4.5) warnings.push(`Color "${c.id}" has only ${ratio.toFixed(2)}:1 contrast with its frame text.`)
 }
 
 const pathIds = new Set()
@@ -69,10 +72,3 @@ for (const w of warnings) console.warn(`warning: ${w}`)
 for (const e of errors) console.error(`error: ${e}`)
 console.log(`${paths.length} paths, ${allFilmIds.size} films, ${Object.keys(diary).length} diary entries, ${colors.available.length} colors left.`)
 if (errors.length) process.exit(1)
-
-function contrastWithWhite(hex) {
-  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255)
-  const lin = (v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4)
-  const lum = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b)
-  return 1.05 / (lum + 0.05)
-}

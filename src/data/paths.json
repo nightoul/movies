@@ -2,7 +2,7 @@
   {
     "id": "vietnam-war",
     "name": "Vietnam war",
-    "color": "raspberry",
+    "color": "purple",
     "films": [
       {"title":"The Deer Hunter","year":1978},
       {"title":"Coming Home","year":1978},
@@ -21,7 +21,7 @@
   {
     "id": "jack-nicholson",
     "name": "Jack Nicholson",
-    "color": "burgundy",
+    "color": "brown",
     "films": [
       {"title":"Easy Rider","year":1969},
       {"title":"Five Easy Pieces","year":1970},
@@ -48,7 +48,7 @@
   {
     "id": "disney-classics-of-the-20th-century",
     "name": "Disney classics of the 20th century",
-    "color": "teal",
+    "color": "pink",
     "films": [
       {"title":"Snow White and the Seven Dwarfs","year":1937},
       {"title":"Pinocchio","year":1940},
@@ -81,7 +81,7 @@
   {
     "id": "charlie-kaufman",
     "name": "Charlie Kaufman",
-    "color": "burnt-orange",
+    "color": "red",
     "films": [
       {"title":"Being John Malkovich","year":1999},
       {"title":"Human Nature","year":2001},
@@ -96,7 +96,7 @@
   {
     "id": "hollywood-classics-of-the-80s",
     "name": "Hollywood classics of the '80s",
-    "color": "mustard",
+    "color": "orange",
     "films": [
       {"title":"Raging Bull","year":1980},
       {"title":"The Shining","year":1980},
@@ -124,7 +124,7 @@
   {
     "id": "david-lynch",
     "name": "David Lynch",
-    "color": "scarlet",
+    "color": "green",
     "films": [
       {"title":"Eraserhead","year":1977},
       {"title":"The Elephant Man","year":1980},
@@ -141,7 +141,7 @@
   {
     "id": "film-noir",
     "name": "Film noir",
-    "color": "salmon",
+    "color": "blue",
     "films": [
       {"title":"The Maltese Falcon","year":1941},
       {"title":"Double Indemnity","year":1944},
@@ -172,7 +172,7 @@
   {
     "id": "hollywood-classics-of-the-70s",
     "name": "Hollywood classics of the '70s",
-    "color": "olive",
+    "color": "yellow",
     "films": [
       {"title":"Five Easy Pieces","year":1970},
       {"title":"The French Connection","year":1971},
@@ -201,7 +201,7 @@
   {
     "id": "western-classics",
     "name": "Western classics",
-    "color": "peacock",
+    "color": "lavender",
     "films": [
       {"title":"Stagecoach","year":1939},
       {"title":"My Darling Clementine","year":1946},
@@ -229,7 +229,7 @@
   {
     "id": "sidney-lumet",
     "name": "Sidney Lumet",
-    "color": "coral",
+    "color": "dark-blue",
     "films": [
       {"title":"12 Angry Men","year":1957},
       {"title":"The Fugitive Kind","year":1960},
@@ -250,7 +250,7 @@
   {
     "id": "classic-animation-outside-the-usa",
     "name": "Classic animation outside the USA",
-    "color": "ochre",
+    "color": "lime",
     "films": [
       {"title":"The Adventures of Prince Achmed","year":1926},
       {"title":"Old Czech Legends","year":1953},
@@ -283,7 +283,7 @@
   {
     "id": "hollywood-classics-of-the-90s",
     "name": "Hollywood classics of the '90s",
-    "color": "rose",
+    "color": "burgundy",
     "films": [
       {"title":"Goodfellas","year":1990},
       {"title":"The Silence of the Lambs","year":1991},

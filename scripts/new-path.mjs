@@ -1,8 +1,9 @@
-// Adds an empty path and gives it a random unused color.
+// Adds an empty path and gives it a random unused color, basic colors first.
 // Usage: npm run new-path -- "David Lynch"
 import { readFileSync, writeFileSync } from 'node:fs'
 import { slugify } from '../src/films.js'
 import { formatPaths } from './format.mjs'
+import { pickColor } from './pick-color.mjs'
 
 const name = process.argv.slice(2).join(' ').trim()
 if (!name) {
@@ -25,7 +26,7 @@ if (colors.available.length === 0) {
   process.exit(1)
 }
 
-const [color] = colors.available.splice(Math.floor(Math.random() * colors.available.length), 1)
+const color = pickColor(colors)
 colors.used.push({ ...color, path: id })
 paths.push({ id, name, color: color.id, films: [] })
 
