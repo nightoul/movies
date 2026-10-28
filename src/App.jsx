@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import bundledDiary from './data/diary.json'
-import { films, paths, seenPath, sharedPath, today } from './catalog.js'
+import { films, paths, seenFilms, sharedPath, today } from './catalog.js'
 import { fetchDiary, loadToken, saveEntry, storeToken } from './github.js'
 import PathRow from './components/PathRow.jsx'
 import Modal from './components/Modal.jsx'
@@ -8,11 +8,12 @@ import FilmDetail from './components/FilmDetail.jsx'
 import LogForm from './components/LogForm.jsx'
 import ConnectForm from './components/ConnectForm.jsx'
 import MoveToSeen from './components/MoveToSeen.jsx'
+import SeenList from './components/SeenList.jsx'
 
 export default function App() {
   const [diary, setDiary] = useState(bundledDiary)
   const [token, setToken] = useState(loadToken)
-  // { kind: 'film' | 'log' | 'edit' | 'seen' | 'unsee' | 'connect', filmId?, then? }
+  // { kind: 'film' | 'log' | 'edit' | 'seen' | 'unsee' | 'seen-list' | 'connect', filmId?, then? }
   const [modal, setModal] = useState(null)
 
   // The bundled copy can lag a minute behind the last commit while Pages
@@ -46,6 +47,7 @@ export default function App() {
   }
 
   const film = modal?.filmId && films.get(modal.filmId)
+  const seen = seenFilms(diary)
 
   return (
     <main className="page">
@@ -86,13 +88,18 @@ export default function App() {
 
       <hr className="separator" />
 
-      <section className="paths">
-        <PathRow path={sharedPath} diary={diary} onOpen={open} />
-        <PathRow path={seenPath(diary)} diary={diary} onOpen={open} />
-      </section>
+      <PathRow path={sharedPath} diary={diary} onOpen={open} />
+
+      <div className="seen-box" title="Double-click to list" onDoubleClick={() => setModal({ kind: 'seen-list' })}>
+        <div>
+          <div className="seen-title">Seen</div>
+          <div className="color-name">Before the diary</div>
+        </div>
+        <div className="seen-count">{seen.length}</div>
+      </div>
 
       {modal && (
-        <Modal onClose={close}>
+        <Modal wide={modal.kind === 'seen-list'} onClose={close}>
           {modal.kind === 'film' && (
             <FilmDetail
               film={film}
@@ -126,6 +133,7 @@ export default function App() {
               onClose={close}
             />
           )}
+          {modal.kind === 'seen-list' && <SeenList films={seen} onOpen={open} onClose={close} />}
           {modal.kind === 'connect' && <ConnectForm onConnect={connect} onClose={close} />}
         </Modal>
       )}

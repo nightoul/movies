@@ -18,7 +18,7 @@ A film is identified by its title and year, so the same film in two paths (*Chin
 
 ## Seen
 
-Below the paths are two rows the site builds itself: **Shared films** (on more than one path) and **Seen**. Triple-click an unwatched film you saw before you started the diary and confirm, and it moves to Seen and leaves every path it was on. Open it in Seen to move it back.
+Below the paths is a row the site builds itself, **Shared films** (on more than one path), and under it a quiet `seen / N` count. Triple-click an unwatched film you saw before you started the diary and confirm, and it moves to Seen and leaves every path it was on. Double-click the count to list them; open one there to move it back.
 
 ## Adding a path
 

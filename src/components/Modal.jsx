@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export default function Modal({ onClose, children }) {
+export default function Modal({ wide, onClose, children }) {
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
     window.addEventListener('keydown', onKey)
@@ -9,7 +9,7 @@ export default function Modal({ onClose, children }) {
 
   return (
     <div className="overlay" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div className="modal" role="dialog" aria-modal="true">
+      <div className={wide ? 'modal wide' : 'modal'} role="dialog" aria-modal="true">
         {children}
       </div>
     </div>
