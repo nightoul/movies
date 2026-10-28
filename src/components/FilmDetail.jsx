@@ -48,7 +48,7 @@ export default function FilmDetail({ film, entry, onEdit, onUnsee, onClose }) {
         </div>
 
         <div className="modal-actions">
-          {entry.seen ? <button onClick={onUnsee}>Move back to paths</button> : <button onClick={onEdit}>Edit note</button>}
+          {entry.seen ? <button onClick={onUnsee}>Move back to paths</button> : <button onClick={onEdit}>Edit entry</button>}
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { films, formatDate, today } from '../catalog.js'
+import { films, today } from '../catalog.js'
 import { ModalHeader } from './Modal.jsx'
 
 const MAX_RESULTS = 8
@@ -24,12 +24,20 @@ export default function LogForm({ diary, editing, onSave, onClose }) {
     () => [...new Set(Object.values(diary).map((e) => e.place).filter(Boolean))].sort(),
     [diary],
   )
-  const date = existing?.date ?? today()
+  const [date, setDate] = useState(existing?.date ?? today())
 
   async function submit(e) {
     e.preventDefault()
     if (!film) {
       setError('Choose a film first.')
+      return
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+      setError('Pick the date you watched it.')
+      return
+    }
+    if (date > today()) {
+      setError('That date is in the future.')
       return
     }
     setSaving(true)
@@ -95,6 +103,20 @@ export default function LogForm({ diary, editing, onSave, onClose }) {
         </>
       )}
 
+      <label className="label" htmlFor="date">
+        Watched
+      </label>
+      <input
+        id="date"
+        type="date"
+        max={today()}
+        value={date}
+        onChange={(e) => {
+          setDate(e.target.value)
+          setError('')
+        }}
+      />
+
       <label className="label" htmlFor="place">
         Where
       </label>
@@ -110,9 +132,6 @@ export default function LogForm({ diary, editing, onSave, onClose }) {
       </label>
       <textarea id="note" rows={4} placeholder="What stayed with you" value={note} onChange={(e) => setNote(e.target.value)} />
 
-      <div className="muted small">
-        {editing ? 'Watched' : 'Date added automatically'}: {formatDate(date)}
-      </div>
       {error && <div className="error">{error}</div>}
 
       <div className="modal-actions">
