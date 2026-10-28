@@ -10,6 +10,7 @@
   --frame-off-text: #8f8e86;
   --gold: #e0a020;
   --danger: #b91c1c;
+  --date: #78716c;
 
   color-scheme: light dark;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -30,6 +31,7 @@
     --frame-off: #2f2f2d;
     --frame-off-text: #77766f;
     --danger: #f87171;
+    --date: #b0b4b0;
   }
 }
 
@@ -129,15 +131,13 @@ a {
   margin-bottom: 2rem;
 }
 
-/* Sits a little to the right of the page's center line. */
+/* Same as the date on the routines site: starts at the page's center line. */
 .top-date {
   position: absolute;
   left: 50%;
-  transform: translateX(calc(-50% + 3rem));
-  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-  font-size: 1.05rem;
-  letter-spacing: 0.22em;
-  color: var(--muted);
+  font: 500 11px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: 0.19em;
+  color: var(--date);
   white-space: nowrap;
 }
 
@@ -344,7 +344,7 @@ a {
   .top-date {
     position: static;
     align-self: center;
-    transform: translateX(1.5rem);
+    transform: translateX(50%);
   }
 }
 
