@@ -633,5 +633,22 @@
       {"title":"Million Dollar Baby","year":2004},
       {"title":"Gran Torino","year":2008}
     ]
+  },
+  {
+    "id": "meryl-streep",
+    "name": "Meryl Streep",
+    "color": "ochre",
+    "films": [
+      {"title":"The Deer Hunter","year":1978},
+      {"title":"Kramer vs. Kramer","year":1979},
+      {"title":"Sophie's Choice","year":1982},
+      {"title":"Silkwood","year":1983},
+      {"title":"Out of Africa","year":1985},
+      {"title":"The Bridges of Madison County","year":1995},
+      {"title":"Adaptation.","year":2002},
+      {"title":"The Hours","year":2002},
+      {"title":"The Devil Wears Prada","year":2006},
+      {"title":"Doubt","year":2008}
+    ]
   }
 ]

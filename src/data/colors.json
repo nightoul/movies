@@ -207,6 +207,14 @@
       "cs": "Khaki",
       "tier": 3,
       "path": "clint-eastwood"
+    },
+    {
+      "id": "ochre",
+      "hex": "#CC7722",
+      "en": "Ochre",
+      "cs": "Okrová",
+      "tier": 3,
+      "path": "meryl-streep"
     }
   ],
   "available": [
@@ -229,13 +237,6 @@
       "hex": "#C9A227",
       "en": "Mustard",
       "cs": "Hořčicová",
-      "tier": 3
-    },
-    {
-      "id": "ochre",
-      "hex": "#CC7722",
-      "en": "Ochre",
-      "cs": "Okrová",
       "tier": 3
     },
     {
