@@ -712,5 +712,35 @@
       {"title":"Broken Flowers","year":2005},
       {"title":"Moonrise Kingdom","year":2012}
     ]
+  },
+  {
+    "id": "slavoj-zizek",
+    "name": "Slavoj Žižek",
+    "color": "peach",
+    "films": [
+      {"title":"The Pervert's Guide to Cinema","year":2006},
+      {"title":"The Pervert's Guide to Ideology","year":2012},
+      {"title":"Duck Soup","year":1933},
+      {"title":"The Searchers","year":1956},
+      {"title":"Vertigo","year":1958},
+      {"title":"Psycho","year":1960},
+      {"title":"The Birds","year":1963},
+      {"title":"Persona","year":1966},
+      {"title":"A Clockwork Orange","year":1971},
+      {"title":"Solaris","year":1972},
+      {"title":"The Conversation","year":1974},
+      {"title":"Jaws","year":1975},
+      {"title":"Taxi Driver","year":1976},
+      {"title":"Stalker","year":1979},
+      {"title":"Blue Velvet","year":1986},
+      {"title":"Full Metal Jacket","year":1987},
+      {"title":"They Live","year":1988},
+      {"title":"Titanic","year":1997},
+      {"title":"The Matrix","year":1999},
+      {"title":"Eyes Wide Shut","year":1999},
+      {"title":"Children of Men","year":2006},
+      {"title":"The Dark Knight","year":2008},
+      {"title":"Anomalisa","year":2015}
+    ]
   }
 ]

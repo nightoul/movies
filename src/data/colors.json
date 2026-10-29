@@ -231,6 +231,14 @@
       "cs": "Mátová",
       "tier": 3,
       "path": "bill-murray"
+    },
+    {
+      "id": "peach",
+      "hex": "#F7B58C",
+      "en": "Peach",
+      "cs": "Broskvová",
+      "tier": 3,
+      "path": "slavoj-zizek"
     }
   ],
   "available": [
@@ -246,13 +254,6 @@
       "hex": "#C9A227",
       "en": "Mustard",
       "cs": "Hořčicová",
-      "tier": 3
-    },
-    {
-      "id": "peach",
-      "hex": "#F7B58C",
-      "en": "Peach",
-      "cs": "Broskvová",
       "tier": 3
     },
     {
