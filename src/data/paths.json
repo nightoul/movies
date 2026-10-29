@@ -81,6 +81,7 @@
       {"title":"Pulp Fiction","year":1994},
       {"title":"Forrest Gump","year":1994},
       {"title":"The Shawshank Redemption","year":1994},
+      {"title":"Ed Wood","year":1994},
       {"title":"Heat","year":1995},
       {"title":"Se7en","year":1995},
       {"title":"Casino","year":1995},
@@ -89,6 +90,7 @@
       {"title":"Boogie Nights","year":1997},
       {"title":"The Big Lebowski","year":1998},
       {"title":"Saving Private Ryan","year":1998},
+      {"title":"Rushmore","year":1998},
       {"title":"American Beauty","year":1999},
       {"title":"Fight Club","year":1999},
       {"title":"The Matrix","year":1999},
@@ -692,6 +694,23 @@
       {"title":"Kolja","year":1996},
       {"title":"Knoflíkáři","year":1997},
       {"title":"Musíme si pomáhat","year":2000}
+    ]
+  },
+  {
+    "id": "bill-murray",
+    "name": "Bill Murray",
+    "color": "mint",
+    "films": [
+      {"title":"Caddyshack","year":1980},
+      {"title":"Tootsie","year":1982},
+      {"title":"Ghostbusters","year":1984},
+      {"title":"Groundhog Day","year":1993},
+      {"title":"Ed Wood","year":1994},
+      {"title":"Rushmore","year":1998},
+      {"title":"Lost in Translation","year":2003},
+      {"title":"The Life Aquatic with Steve Zissou","year":2004},
+      {"title":"Broken Flowers","year":2005},
+      {"title":"Moonrise Kingdom","year":2012}
     ]
   }
 ]

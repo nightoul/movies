@@ -223,6 +223,14 @@
       "cs": "Indigová",
       "tier": 3,
       "path": "czech-classics"
+    },
+    {
+      "id": "mint",
+      "hex": "#3EB489",
+      "en": "Mint",
+      "cs": "Mátová",
+      "tier": 3,
+      "path": "bill-murray"
     }
   ],
   "available": [
@@ -238,13 +246,6 @@
       "hex": "#C9A227",
       "en": "Mustard",
       "cs": "Hořčicová",
-      "tier": 3
-    },
-    {
-      "id": "mint",
-      "hex": "#3EB489",
-      "en": "Mint",
-      "cs": "Mátová",
       "tier": 3
     },
     {
