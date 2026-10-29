@@ -35,14 +35,17 @@ export default function DiaryPage({ diary, onOpen }) {
                     <span className="diary-film">
                       {e.film.title} <span className="muted">({e.film.year})</span>
                     </span>
-                    <span className="diary-meta">
+                    <span className="diary-paths">
                       {e.film.paths.map((p) => (
-                        <span key={p.id} className="dot" style={{ background: p.color.hex }} title={p.name} />
+                        <span key={p.id} className="diary-path">
+                          <span className="dot" style={{ background: p.color.hex }} />
+                          {p.name}
+                        </span>
                       ))}
-                      {e.place && <span>{e.place}</span>}
                     </span>
                     {e.note && <span className="note diary-note">{e.note}</span>}
                   </span>
+                  {e.place && <span className="diary-place">{e.place}</span>}
                 </button>
               </li>
             ))}

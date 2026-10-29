@@ -461,16 +461,28 @@ a {
   font-weight: 500;
 }
 
-.diary-meta {
+.diary-paths {
   display: flex;
-  align-items: center;
-  gap: 0.35rem;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
   font-size: 0.8125rem;
   color: var(--muted);
 }
 
-.diary-meta .dot + span {
-  margin-left: 0.4rem;
+.diary-path {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.diary-place {
+  flex: none;
+  margin-left: auto;
+  max-width: 30%;
+  padding-top: 0.2rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  text-align: right;
 }
 
 .diary-note {
