@@ -215,16 +215,17 @@
       "cs": "Okrová",
       "tier": 3,
       "path": "meryl-streep"
-    }
-  ],
-  "available": [
+    },
     {
       "id": "indigo",
       "hex": "#4B3FA6",
       "en": "Indigo",
       "cs": "Indigová",
-      "tier": 3
-    },
+      "tier": 3,
+      "path": "czech-classics"
+    }
+  ],
+  "available": [
     {
       "id": "emerald",
       "hex": "#16784A",

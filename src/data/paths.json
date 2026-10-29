@@ -657,5 +657,41 @@
       {"title":"The Devil Wears Prada","year":2006},
       {"title":"Doubt","year":2008}
     ]
+  },
+  {
+    "id": "czech-classics",
+    "name": "Czech classics",
+    "color": "indigo",
+    "films": [
+      {"title":"Limonádový Joe aneb Koňská opera","year":1964},
+      {"title":"Obchod na korze","year":1965},
+      {"title":"Lásky jedné plavovlásky","year":1965},
+      {"title":"Ostře sledované vlaky","year":1966},
+      {"title":"Sedmikrásky","year":1966},
+      {"title":"Hoří, má panenko","year":1967},
+      {"title":"Marketa Lazarová","year":1967},
+      {"title":"Spalovač mrtvol","year":1968},
+      {"title":"Rozmarné léto","year":1968},
+      {"title":"Valerie a týden divů","year":1970},
+      {"title":"Tři oříšky pro Popelku","year":1973},
+      {"title":"Na samotě u lesa","year":1976},
+      {"title":"Adéla ještě nevečeřela","year":1977},
+      {"title":"Kulový blesk","year":1978},
+      {"title":"Postřižiny","year":1980},
+      {"title":"Tajemství hradu v Karpatech","year":1981},
+      {"title":"Vrchní, prchni!","year":1981},
+      {"title":"Slavnosti sněženek","year":1983},
+      {"title":"Vesničko má středisková","year":1985},
+      {"title":"Kopytem sem, kopytem tam","year":1988},
+      {"title":"Konec starých časů","year":1989},
+      {"title":"Obecná škola","year":1991},
+      {"title":"Kouř","year":1991},
+      {"title":"Šakalí léta","year":1993},
+      {"title":"Akumulátor 1","year":1994},
+      {"title":"Jízda","year":1994},
+      {"title":"Kolja","year":1996},
+      {"title":"Knoflíkáři","year":1997},
+      {"title":"Musíme si pomáhat","year":2000}
+    ]
   }
 ]
