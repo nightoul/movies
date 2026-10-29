@@ -9,6 +9,7 @@ import LogForm from './components/LogForm.jsx'
 import ConnectForm from './components/ConnectForm.jsx'
 import MoveToSeen from './components/MoveToSeen.jsx'
 import SeenList from './components/SeenList.jsx'
+import DiaryPage from './components/DiaryPage.jsx'
 
 export default function App() {
   const [diary, setDiary] = useState(bundledDiary)
@@ -23,6 +24,17 @@ export default function App() {
       .then(({ diary }) => setDiary(diary))
       .catch(() => {})
   }, [token])
+
+  // Two pages, switched by the URL hash so GitHub Pages needs no routing setup.
+  const [page, setPage] = useState(readPage)
+  useEffect(() => {
+    const onHash = () => {
+      setPage(readPage())
+      window.scrollTo(0, 0)
+    }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
 
   const close = useCallback(() => setModal(null), [])
   const open = (filmId) => setModal({ kind: 'film', filmId })
@@ -52,6 +64,14 @@ export default function App() {
   return (
     <main className="page">
       <header className="top">
+        <nav className="top-nav">
+          <a href="#/" className={page === 'paths' ? 'active' : undefined}>
+            paths
+          </a>
+          <a href="#/diary" className={page === 'diary' ? 'active' : undefined}>
+            diary
+          </a>
+        </nav>
         <div className="top-date">oct 28 / 2026</div>
         <div className="top-actions">
           {token ? (
@@ -74,29 +94,35 @@ export default function App() {
         </div>
       </header>
 
-      <section className="paths">
-        {paths.map((p) => (
-          <PathRow
-            key={p.id}
-            path={p}
-            diary={diary}
-            onOpen={open}
-            onMarkSeen={(filmId) => requireToken({ kind: 'seen', filmId })}
-          />
-        ))}
-      </section>
+      {page === 'diary' ? (
+        <DiaryPage diary={diary} onOpen={open} />
+      ) : (
+        <>
+          <section className="paths">
+            {paths.map((p) => (
+              <PathRow
+                key={p.id}
+                path={p}
+                diary={diary}
+                onOpen={open}
+                onMarkSeen={(filmId) => requireToken({ kind: 'seen', filmId })}
+              />
+            ))}
+          </section>
 
-      <hr className="separator" />
+          <hr className="separator" />
 
-      <PathRow path={sharedPath} diary={diary} onOpen={open} />
+          <PathRow path={sharedPath} diary={diary} onOpen={open} />
 
-      <div className="seen-box" title="Double-click to list" onDoubleClick={() => setModal({ kind: 'seen-list' })}>
-        <div>
-          <div className="seen-title">Seen</div>
-          <div className="color-name">Before the diary</div>
-        </div>
-        <div className="seen-count">{seen.length}</div>
-      </div>
+          <div className="seen-box" title="Double-click to list" onDoubleClick={() => setModal({ kind: 'seen-list' })}>
+            <div>
+              <div className="seen-title">Seen</div>
+              <div className="color-name">Before the diary</div>
+            </div>
+            <div className="seen-count">{seen.length}</div>
+          </div>
+        </>
+      )}
 
       {modal && (
         <Modal wide={modal.kind === 'seen-list'} onClose={close}>
@@ -139,4 +165,8 @@ export default function App() {
       )}
     </main>
   )
+}
+
+function readPage() {
+  return window.location.hash === '#/diary' ? 'diary' : 'paths'
 }

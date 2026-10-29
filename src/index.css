@@ -126,9 +126,36 @@ a {
 .top {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+.top-nav {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.top-nav a {
+  font: 500 11px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: 0.19em;
+  color: var(--date);
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  color: var(--text);
+}
+
+.top-nav a.active {
+  color: var(--text);
+}
+
+.top-nav a.active::before {
+  content: '●';
+  margin-right: 0.6em;
+  font-size: 0.7em;
+  vertical-align: 0.15em;
 }
 
 /* Same as the date on the routines site: starts at the page's center line. */
@@ -359,6 +386,100 @@ a {
   flex: 1;
 }
 
+/* Diary page: watched films by month, newest first */
+
+.diary {
+  max-width: 680px;
+  margin: 1rem auto 0;
+}
+
+.diary-empty {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.diary-month + .diary-month {
+  margin-top: 2.5rem;
+}
+
+.diary-month-title {
+  margin: 0 0 0.6rem;
+  font: 500 11px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: 0.19em;
+  color: var(--date);
+}
+
+.diary-month-title span {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.diary-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.diary-entries li {
+  border-top: 1px solid var(--border);
+}
+
+.diary-entry {
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 1rem 0.25rem;
+  border: none;
+  border-radius: 0;
+  background: none;
+  text-align: left;
+}
+
+.diary-entry:hover {
+  background: var(--surface-muted);
+}
+
+.diary-day {
+  flex: none;
+  width: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--muted);
+  text-align: right;
+}
+
+.diary-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.diary-film {
+  font-size: 1.02rem;
+  font-weight: 500;
+}
+
+.diary-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.diary-meta .dot + span {
+  margin-left: 0.4rem;
+}
+
+.diary-note {
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.85;
+}
+
 @media (max-width: 640px) {
   .path {
     grid-template-columns: minmax(0, 1fr) 44px;
@@ -374,6 +495,10 @@ a {
     flex-direction: column;
     align-items: flex-end;
     gap: 1.25rem;
+  }
+
+  .top-nav {
+    align-self: flex-start;
   }
 
   .top-date {

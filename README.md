@@ -16,6 +16,10 @@ Everything lives in `src/data/`:
 
 A film is identified by its title and year, so the same film in two paths (*Chinatown* in Jack Nicholson and '70s classics) shares one entry. Spell it the same way in both; `npm run check` catches mismatches.
 
+## Diary
+
+The **diary** link in the top left opens `#/diary`: every film you logged, newest first and grouped by month, with where you watched it and your note. Films moved to Seen aren't listed there.
+
 ## Seen
 
 Below the paths is a row the site builds itself, **Shared films** (on more than one path), and under it a quiet `seen / N` count. Triple-click an unwatched film you saw before you started the diary and confirm, and it moves to Seen and leaves every path it was on. Double-click the count to list them; open one there to move it back.
