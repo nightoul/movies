@@ -62,6 +62,7 @@
     "color": "purple",
     "films": [
       {"title":"Goodfellas","year":1990},
+      {"title":"Dances with Wolves","year":1990},
       {"title":"The Silence of the Lambs","year":1991},
       {"title":"Thelma & Louise","year":1991},
       {"title":"Unforgiven","year":1992},
@@ -249,6 +250,7 @@
       {"title":"True Grit","year":1969},
       {"title":"McCabe & Mrs. Miller","year":1971},
       {"title":"The Outlaw Josey Wales","year":1976},
+      {"title":"Dances with Wolves","year":1990},
       {"title":"Unforgiven","year":1992}
     ]
   },
@@ -437,34 +439,20 @@
     "color": "beige",
     "films": [
       {"title":"Battleship Potemkin","year":1925},
-      {"title":"Man with a Movie Camera","year":1929},
-      {"title":"Earth","year":1930},
-      {"title":"Alexander Nevsky","year":1938},
-      {"title":"Ivan the Terrible","year":1944},
       {"title":"The Cranes Are Flying","year":1957},
       {"title":"Ballad of a Soldier","year":1959},
       {"title":"Ivan's Childhood","year":1962},
-      {"title":"I Am Cuba","year":1964},
       {"title":"Andrei Rublev","year":1966},
       {"title":"The Diamond Arm","year":1969},
-      {"title":"White Sun of the Desert","year":1970},
       {"title":"Solaris","year":1972},
-      {"title":"Seventeen Moments of Spring","year":1973},
-      {"title":"At Home Among Strangers","year":1974},
       {"title":"The Mirror","year":1975},
       {"title":"The Irony of Fate","year":1976},
-      {"title":"A Slave of Love","year":1976},
       {"title":"An Unfinished Piece for Mechanical Piano","year":1977},
-      {"title":"Office Romance","year":1977},
       {"title":"The Ascent","year":1977},
       {"title":"Stalker","year":1979},
-      {"title":"Siberiade","year":1979},
       {"title":"Moscow Does Not Believe in Tears","year":1980},
-      {"title":"Oblomov","year":1980},
-      {"title":"Station for Two","year":1983},
       {"title":"Come and See","year":1985},
-      {"title":"Kin-dza-dza!","year":1986},
-      {"title":"Dark Eyes","year":1987}
+      {"title":"Burnt by the Sun","year":1994}
     ]
   },
   {
