@@ -199,6 +199,14 @@
       "cs": "Hnědá",
       "tier": 1,
       "path": "viggo-mortensen"
+    },
+    {
+      "id": "khaki",
+      "hex": "#A89F68",
+      "en": "Khaki",
+      "cs": "Khaki",
+      "tier": 3,
+      "path": "clint-eastwood"
     }
   ],
   "available": [
@@ -235,13 +243,6 @@
       "hex": "#3EB489",
       "en": "Mint",
       "cs": "Mátová",
-      "tier": 3
-    },
-    {
-      "id": "khaki",
-      "hex": "#A89F68",
-      "en": "Khaki",
-      "cs": "Khaki",
       "tier": 3
     },
     {

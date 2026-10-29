@@ -616,5 +616,22 @@
       {"title":"First Man","year":2018},
       {"title":"Ad Astra","year":2019}
     ]
+  },
+  {
+    "id": "clint-eastwood",
+    "name": "Clint Eastwood",
+    "color": "khaki",
+    "films": [
+      {"title":"A Fistful of Dollars","year":1964},
+      {"title":"The Good, the Bad and the Ugly","year":1966},
+      {"title":"Dirty Harry","year":1971},
+      {"title":"The Outlaw Josey Wales","year":1976},
+      {"title":"Escape from Alcatraz","year":1979},
+      {"title":"Unforgiven","year":1992},
+      {"title":"The Bridges of Madison County","year":1995},
+      {"title":"Mystic River","year":2003},
+      {"title":"Million Dollar Baby","year":2004},
+      {"title":"Gran Torino","year":2008}
+    ]
   }
 ]
