@@ -11,6 +11,8 @@
       {"title":"The Exorcist","year":1973},
       {"title":"Mean Streets","year":1973},
       {"title":"Badlands","year":1973},
+      {"title":"Serpico","year":1973},
+      {"title":"The Last Detail","year":1973},
       {"title":"Chinatown","year":1974},
       {"title":"The Conversation","year":1974},
       {"title":"The Godfather Part II","year":1974},
@@ -25,7 +27,9 @@
       {"title":"Star Wars","year":1977},
       {"title":"The Deer Hunter","year":1978},
       {"title":"Days of Heaven","year":1978},
-      {"title":"Apocalypse Now","year":1979}
+      {"title":"Apocalypse Now","year":1979},
+      {"title":"Kramer vs. Kramer","year":1979},
+      {"title":"Alien","year":1979}
     ]
   },
   {
@@ -46,10 +50,12 @@
       {"title":"The Terminator","year":1984},
       {"title":"Once Upon a Time in America","year":1984},
       {"title":"Back to the Future","year":1985},
+      {"title":"Out of Africa","year":1985},
       {"title":"Blue Velvet","year":1986},
       {"title":"Platoon","year":1986},
       {"title":"Full Metal Jacket","year":1987},
       {"title":"Wall Street","year":1987},
+      {"title":"The Untouchables","year":1987},
       {"title":"Die Hard","year":1988},
       {"title":"Rain Man","year":1988},
       {"title":"Do the Right Thing","year":1989},
@@ -77,6 +83,7 @@
       {"title":"The Shawshank Redemption","year":1994},
       {"title":"Heat","year":1995},
       {"title":"Se7en","year":1995},
+      {"title":"Casino","year":1995},
       {"title":"Fargo","year":1996},
       {"title":"Titanic","year":1997},
       {"title":"Boogie Nights","year":1997},
