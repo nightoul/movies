@@ -239,6 +239,14 @@
       "cs": "Broskvová",
       "tier": 3,
       "path": "slavoj-zizek"
+    },
+    {
+      "id": "magenta",
+      "hex": "#C2187A",
+      "en": "Magenta",
+      "cs": "Purpurová",
+      "tier": 3,
+      "path": "action-legends"
     }
   ],
   "available": [
@@ -254,13 +262,6 @@
       "hex": "#C9A227",
       "en": "Mustard",
       "cs": "Hořčicová",
-      "tier": 3
-    },
-    {
-      "id": "magenta",
-      "hex": "#C2187A",
-      "en": "Magenta",
-      "cs": "Purpurová",
       "tier": 3
     },
     {
