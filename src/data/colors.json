@@ -44,7 +44,7 @@
       "id": "teal",
       "hex": "#008080",
       "en": "Teal",
-      "cs": "Petrolejová",
+      "cs": "Tmavě modrozelená",
       "family": "Blue-greens",
       "path": "jack-nicholson"
     },
@@ -179,8 +179,8 @@
     {
       "id": "magenta",
       "hex": "#C4329F",
-      "en": "Magenta / Fuchsia",
-      "cs": "Fuchsiová",
+      "en": "Magenta",
+      "cs": "Magenta",
       "family": "Pinks",
       "path": "stanley-kubrick"
     },
@@ -188,7 +188,7 @@
       "id": "denim",
       "hex": "#3B5F8C",
       "en": "Denim",
-      "cs": "Džínová",
+      "cs": "Denim",
       "family": "Blues",
       "path": "marlon-brando"
     },
@@ -247,36 +247,39 @@
       "cs": "Vínová",
       "family": "Deep reds",
       "path": "action-legends"
-    }
-  ],
-  "available": [
-    {
-      "id": "brown",
-      "hex": "#7B4A2A",
-      "en": "Brown",
-      "cs": "Hnědá",
-      "family": "Browns"
-    },
-    {
-      "id": "olive",
-      "hex": "#708238",
-      "en": "Olive",
-      "cs": "Olivová",
-      "family": "Greens"
-    },
-    {
-      "id": "turquoise",
-      "hex": "#30C5C0",
-      "en": "Turquoise",
-      "cs": "Tyrkysová",
-      "family": "Blue-greens"
     },
     {
       "id": "blue",
       "hex": "#1F5FBF",
       "en": "Blue",
       "cs": "Modrá",
-      "family": "Blues"
+      "family": "Blues",
+      "path": "philip-seymour-hoffman"
+    },
+    {
+      "id": "brown",
+      "hex": "#7B4A2A",
+      "en": "Brown",
+      "cs": "Hnědá",
+      "family": "Browns",
+      "path": "sean-penn"
+    },
+    {
+      "id": "turquoise",
+      "hex": "#30C5C0",
+      "en": "Turquoise",
+      "cs": "Tyrkysová",
+      "family": "Blue-greens",
+      "path": "robert-duvall"
+    }
+  ],
+  "available": [
+    {
+      "id": "olive",
+      "hex": "#708238",
+      "en": "Olive",
+      "cs": "Olivová",
+      "family": "Greens"
     },
     {
       "id": "violet",

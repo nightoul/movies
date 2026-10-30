@@ -85,12 +85,14 @@
       {"title":"Heat","year":1995},
       {"title":"Se7en","year":1995},
       {"title":"Casino","year":1995},
+      {"title":"Leaving Las Vegas","year":1995},
       {"title":"Fargo","year":1996},
       {"title":"Titanic","year":1997},
       {"title":"Boogie Nights","year":1997},
       {"title":"The Big Lebowski","year":1998},
       {"title":"Saving Private Ryan","year":1998},
       {"title":"Rushmore","year":1998},
+      {"title":"Fear and Loathing in Las Vegas","year":1998},
       {"title":"American Beauty","year":1999},
       {"title":"Fight Club","year":1999},
       {"title":"The Matrix","year":1999},
@@ -769,6 +771,57 @@
       {"title":"True Lies","year":1994},
       {"title":"Speed","year":1994},
       {"title":"Die Hard with a Vengeance","year":1995}
+    ]
+  },
+  {
+    "id": "philip-seymour-hoffman",
+    "name": "Philip Seymour Hoffman",
+    "color": "blue",
+    "films": [
+      {"title":"Boogie Nights","year":1997},
+      {"title":"The Big Lebowski","year":1998},
+      {"title":"Magnolia","year":1999},
+      {"title":"The Talented Mr. Ripley","year":1999},
+      {"title":"Almost Famous","year":2000},
+      {"title":"Capote","year":2005},
+      {"title":"Before the Devil Knows You're Dead","year":2007},
+      {"title":"Doubt","year":2008},
+      {"title":"Synecdoche, New York","year":2008},
+      {"title":"The Master","year":2012}
+    ]
+  },
+  {
+    "id": "sean-penn",
+    "name": "Sean Penn",
+    "color": "brown",
+    "films": [
+      {"title":"Fast Times at Ridgemont High","year":1982},
+      {"title":"Casualties of War","year":1989},
+      {"title":"Carlito's Way","year":1993},
+      {"title":"Dead Man Walking","year":1995},
+      {"title":"The Thin Red Line","year":1998},
+      {"title":"Sweet and Lowdown","year":1999},
+      {"title":"21 Grams","year":2003},
+      {"title":"Mystic River","year":2003},
+      {"title":"Milk","year":2008},
+      {"title":"The Tree of Life","year":2011}
+    ]
+  },
+  {
+    "id": "robert-duvall",
+    "name": "Robert Duvall",
+    "color": "turquoise",
+    "films": [
+      {"title":"To Kill a Mockingbird","year":1962},
+      {"title":"True Grit","year":1969},
+      {"title":"MASH","year":1970},
+      {"title":"The Godfather","year":1972},
+      {"title":"The Conversation","year":1974},
+      {"title":"The Godfather Part II","year":1974},
+      {"title":"Network","year":1976},
+      {"title":"Apocalypse Now","year":1979},
+      {"title":"Tender Mercies","year":1983},
+      {"title":"The Apostle","year":1997}
     ]
   }
 ]
