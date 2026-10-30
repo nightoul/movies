@@ -11,13 +11,12 @@ const diary = read('diary.json')
 const errors = []
 const warnings = []
 
-// Colors: unique ids, hexes and names, a known tier, readable frame text,
+// Colors: unique ids, hexes and names, a family, readable frame text,
 // used <-> paths in sync.
 const allColors = [...colors.used, ...colors.available]
 const seen = new Set()
 for (const c of allColors) {
-  for (const key of ['id', 'hex', 'en', 'cs']) if (!c[key]) errors.push(`Color ${JSON.stringify(c)} is missing "${key}".`)
-  if (![1, 2, 3].includes(c.tier)) errors.push(`Color "${c.id}" needs a tier of 1, 2 or 3.`)
+  for (const key of ['id', 'hex', 'en', 'cs', 'family']) if (!c[key]) errors.push(`Color ${JSON.stringify(c)} is missing "${key}".`)
   for (const [kind, value] of [['id', c.id], ['hex', c.hex.toLowerCase()], ['English name', c.en], ['Czech name', c.cs]]) {
     if (seen.has(`${kind}:${value}`)) errors.push(`Color ${kind} "${value}" appears more than once.`)
     seen.add(`${kind}:${value}`)

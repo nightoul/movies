@@ -53,6 +53,5 @@ if (colorId) {
   colors.available.push(oldColor)
 }
 
-colors.available.sort((a, b) => a.tier - b.tier)
 writeFileSync(colorsFile, JSON.stringify(colors, null, 2) + '\n')
 writeFileSync(pathsFile, formatPaths(paths))

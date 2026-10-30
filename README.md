@@ -30,7 +30,7 @@ Below the paths is a row the site builds itself, **Shared films** (on more than 
 npm run new-path -- "Stanley Kubrick"
 ```
 
-This picks a random unused color, moves it from `available` to `used`, and appends an empty path to `paths.json`. Colors come in tiers (1 = basic like red or blue, 2 = common shades like dark blue or beige, 3 = less known like ochre or mint), and the script only moves to the next tier once the previous one is used up. Light colors get dark frame text automatically. To give a path a color of your choice, or a new random one:
+This picks a random unused color, moves it from `available` to `used`, and appends an empty path to `paths.json`. The palette is a fixed set of 37 colors grouped into families (bright reds, deep reds, oranges, browns, yellows, greens, blue-greens, blues, purples, pinks, greys), each with an English and a Czech name. Light colors get dark frame text automatically. To add more, append entries with `id`, `hex`, `en`, `cs` and `family` to `available`. To give a path a color of your choice, or a new random one:
 
 ```bash
 npm run set-color -- film-noir burgundy

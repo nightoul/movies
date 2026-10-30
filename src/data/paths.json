@@ -101,7 +101,7 @@
   {
     "id": "jack-nicholson",
     "name": "Jack Nicholson",
-    "color": "blue",
+    "color": "teal",
     "films": [
       {"title":"Easy Rider","year":1969},
       {"title":"Five Easy Pieces","year":1970},
@@ -128,7 +128,7 @@
   {
     "id": "disney-20th-century",
     "name": "Disney 20th century",
-    "color": "light-blue",
+    "color": "lavender",
     "films": [
       {"title":"Mickey Mouse shorts","year":1928},
       {"title":"Silly Symphonies","year":1929},
@@ -174,7 +174,7 @@
   {
     "id": "charlie-kaufman",
     "name": "Charlie Kaufman",
-    "color": "red",
+    "color": "navy",
     "films": [
       {"title":"Being John Malkovich","year":1999},
       {"title":"Human Nature","year":2001},
@@ -189,7 +189,7 @@
   {
     "id": "david-lynch",
     "name": "David Lynch",
-    "color": "green",
+    "color": "beige",
     "films": [
       {"title":"Eraserhead","year":1977},
       {"title":"The Elephant Man","year":1980},
@@ -237,7 +237,7 @@
   {
     "id": "western",
     "name": "Western",
-    "color": "lavender",
+    "color": "scarlet",
     "films": [
       {"title":"Stagecoach","year":1939},
       {"title":"My Darling Clementine","year":1946},
@@ -266,7 +266,7 @@
   {
     "id": "sidney-lumet",
     "name": "Sidney Lumet",
-    "color": "dark-blue",
+    "color": "khaki",
     "films": [
       {"title":"12 Angry Men","year":1957},
       {"title":"The Fugitive Kind","year":1960},
@@ -287,7 +287,7 @@
   {
     "id": "european-cartoons",
     "name": "European cartoons",
-    "color": "lime",
+    "color": "salmon",
     "films": [
       {"title":"The Adventures of Prince Achmed","year":1926},
       {"title":"Animal Farm","year":1954},
@@ -328,7 +328,7 @@
   {
     "id": "viggo-mortensen",
     "name": "Viggo Mortensen",
-    "color": "brown",
+    "color": "cream",
     "films": [
       {"title":"The Indian Runner","year":1991},
       {"title":"Carlito's Way","year":1993},
@@ -373,7 +373,7 @@
   {
     "id": "sam-mendes",
     "name": "Sam Mendes",
-    "color": "pink",
+    "color": "green",
     "films": [
       {"title":"American Beauty","year":1999},
       {"title":"Road to Perdition","year":2002},
@@ -389,7 +389,7 @@
   {
     "id": "terrence-malick",
     "name": "Terrence Malick",
-    "color": "olive",
+    "color": "ochre",
     "films": [
       {"title":"Badlands","year":1973},
       {"title":"Days of Heaven","year":1978},
@@ -405,7 +405,7 @@
   {
     "id": "milos-forman",
     "name": "Miloš Forman",
-    "color": "turquoise",
+    "color": "coral",
     "films": [
       {"title":"Černý Petr","year":1964},
       {"title":"Lásky jedné plavovlásky","year":1965},
@@ -424,7 +424,7 @@
   {
     "id": "lars-von-trier",
     "name": "Lars von Trier",
-    "color": "teal",
+    "color": "auburn",
     "films": [
       {"title":"The Element of Crime","year":1984},
       {"title":"Epidemic","year":1987},
@@ -445,7 +445,7 @@
   {
     "id": "soviet-classics",
     "name": "Soviet classics",
-    "color": "beige",
+    "color": "peach",
     "films": [
       {"title":"Battleship Potemkin","year":1925},
       {"title":"The Cranes Are Flying","year":1957},
@@ -467,7 +467,7 @@
   {
     "id": "classics-of-comedy",
     "name": "Classics of comedy",
-    "color": "light-green",
+    "color": "grey",
     "films": [
       {"title":"Young Frankenstein","year":1974},
       {"title":"Blazing Saddles","year":1974},
@@ -516,7 +516,7 @@
   {
     "id": "robert-de-niro",
     "name": "Robert De Niro",
-    "color": "coral",
+    "color": "red",
     "films": [
       {"title":"Mean Streets","year":1973},
       {"title":"The Godfather Part II","year":1974},
@@ -552,7 +552,7 @@
   {
     "id": "spanish-cinema",
     "name": "Spanish cinema",
-    "color": "cyan",
+    "color": "mauve",
     "films": [
       {"title":"Viridiana","year":1961},
       {"title":"The Spirit of the Beehive","year":1973},
@@ -565,7 +565,7 @@
   {
     "id": "stanley-kubrick",
     "name": "Stanley Kubrick",
-    "color": "plum",
+    "color": "magenta",
     "films": [
       {"title":"Killer's Kiss","year":1955},
       {"title":"The Killing","year":1956},
@@ -584,7 +584,7 @@
   {
     "id": "marlon-brando",
     "name": "Marlon Brando",
-    "color": "salmon",
+    "color": "denim",
     "films": [
       {"title":"A Streetcar Named Desire","year":1951},
       {"title":"Viva Zapata!","year":1952},
@@ -608,7 +608,7 @@
   {
     "id": "space",
     "name": "Space",
-    "color": "old-rose",
+    "color": "amber",
     "films": [
       {"title":"2001: A Space Odyssey","year":1968},
       {"title":"Solaris","year":1972},
@@ -629,7 +629,7 @@
   {
     "id": "clint-eastwood",
     "name": "Clint Eastwood",
-    "color": "khaki",
+    "color": "aquamarine",
     "films": [
       {"title":"A Fistful of Dollars","year":1964},
       {"title":"The Good, the Bad and the Ugly","year":1966},
@@ -646,7 +646,7 @@
   {
     "id": "meryl-streep",
     "name": "Meryl Streep",
-    "color": "ochre",
+    "color": "pink",
     "films": [
       {"title":"The Deer Hunter","year":1978},
       {"title":"Kramer vs. Kramer","year":1979},
@@ -663,7 +663,7 @@
   {
     "id": "czech-classics",
     "name": "Czech classics",
-    "color": "indigo",
+    "color": "azure",
     "films": [
       {"title":"Limonádový Joe aneb Koňská opera","year":1964},
       {"title":"Obchod na korze","year":1965},
@@ -699,7 +699,7 @@
   {
     "id": "bill-murray",
     "name": "Bill Murray",
-    "color": "mint",
+    "color": "cyan",
     "films": [
       {"title":"Caddyshack","year":1980},
       {"title":"Tootsie","year":1982},
@@ -716,7 +716,7 @@
   {
     "id": "slavoj-zizek",
     "name": "Slavoj Žižek",
-    "color": "peach",
+    "color": "lime",
     "films": [
       {"title":"The Pervert's Guide to Cinema","year":2006},
       {"title":"The Pervert's Guide to Ideology","year":2012},
@@ -746,7 +746,7 @@
   {
     "id": "action-legends",
     "name": "Action legends",
-    "color": "magenta",
+    "color": "maroon",
     "films": [
       {"title":"Mad Max","year":1979},
       {"title":"Mad Max 2","year":1981},
