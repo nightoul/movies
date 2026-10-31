@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import bundledDiary from './data/diary.json'
-import { films, paths, seenFilms, sharedPath, today } from './catalog.js'
+import { films, paletteSize, paths, seenFilms, sharedPath, today } from './catalog.js'
 import { fetchDiary, loadToken, saveEntry, storeToken } from './github.js'
 import PathRow from './components/PathRow.jsx'
 import Modal from './components/Modal.jsx'
@@ -66,7 +66,7 @@ export default function App() {
       <header className="top">
         <nav className="top-nav">
           <a href="#/" className={page === 'paths' ? 'active' : undefined}>
-            paths
+            paths <span className="nav-count">({paths.length}/{paletteSize})</span>
           </a>
           <a href="#/diary" className={page === 'diary' ? 'active' : undefined}>
             diary

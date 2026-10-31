@@ -825,5 +825,19 @@
       {"title":"Tender Mercies","year":1983},
       {"title":"The Apostle","year":1997}
     ]
+  },
+  {
+    "id": "michael-cimino",
+    "name": "Michael Cimino",
+    "color": "olive",
+    "films": [
+      {"title":"Thunderbolt and Lightfoot","year":1974},
+      {"title":"The Deer Hunter","year":1978},
+      {"title":"Heaven's Gate","year":1980},
+      {"title":"Year of the Dragon","year":1985},
+      {"title":"The Sicilian","year":1987},
+      {"title":"Desperate Hours","year":1990},
+      {"title":"The Sunchaser","year":1996}
+    ]
   }
 ]

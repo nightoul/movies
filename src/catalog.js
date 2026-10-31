@@ -3,7 +3,10 @@ import pathsData from './data/paths.json'
 import { textOn } from './colors.js'
 import { filmId } from './films.js'
 
-const colorById = Object.fromEntries(colors.used.map((c) => [c.id, { ...c, text: textOn(c.hex) }]))
+// Every path takes one color, so the palette size is how many paths fit.
+export const paletteSize = colors.used.length + colors.available.length
+
+const colorById =Object.fromEntries(colors.used.map((c) => [c.id, { ...c, text: textOn(c.hex) }]))
 
 export const paths = pathsData.map((p) => ({
   ...p,

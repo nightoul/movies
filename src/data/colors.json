@@ -271,16 +271,17 @@
       "cs": "Tyrkysová",
       "family": "Blue-greens",
       "path": "robert-duvall"
-    }
-  ],
-  "available": [
+    },
     {
       "id": "olive",
       "hex": "#708238",
       "en": "Olive",
       "cs": "Olivová",
-      "family": "Greens"
-    },
+      "family": "Greens",
+      "path": "michael-cimino"
+    }
+  ],
+  "available": [
     {
       "id": "violet",
       "hex": "#7F3FBF",

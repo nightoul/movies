@@ -151,6 +151,10 @@ a {
   color: var(--text);
 }
 
+.nav-count {
+  color: var(--date);
+}
+
 .top-nav a.active::before {
   content: '●';
   margin-right: 0.6em;
